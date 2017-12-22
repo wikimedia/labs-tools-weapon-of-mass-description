@@ -122,7 +122,7 @@ def apiitem():
 	response['items'] = items
 	return jsonify(response)
 
-def edit(qid, lang, label, description):
+def edit(qid, language, label, description):
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
