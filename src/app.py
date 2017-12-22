@@ -63,7 +63,7 @@ def index():
 
 @app.route('/api-item')
 def apiitem():
-	itemids = request.args.get('item')
+	itemid = request.args.get('item')
 	params = {
 		"action": "wbgetentities",
 		"format": "json",
