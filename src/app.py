@@ -180,7 +180,7 @@ def edit(qid, lang, label, description):
 	data = r.json()
 	return True
 
-@app.route('/api-edit')
+@app.route('/api-edit', methods=['post'])
 def apiedit():
 	data = request.get_json()
 	languages = langs()['langs']
