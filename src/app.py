@@ -87,7 +87,8 @@ def apiitem():
 			descriptions.append(data[entity]['descriptions'][description])
 		items.append({
 			'labels': labels,
-			'descriptions': descriptions
+			'descriptions': descriptions,
+			'qid': entity,
 		})
 	response['items'] = items
 	return jsonify(response)
