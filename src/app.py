@@ -61,6 +61,37 @@ def index():
 	else:
 		return render_template('login.html', loggeed=logged(), username=getusername())
 
+@app.route('/api-item')
+def apiitem():
+	itemids = request.args.get('item')
+	params = {
+		"action": "wbgetentities",
+		"format": "json",
+		"ids": "Q1|Q2",
+		"redirects": "yes",
+		"props": "sitelinks|labels|descriptions",
+		"languages": "cs|en"
+	}
+	r = requests.get(app.config['API_MWURI'], params=params)
+	data = r.json()['entities']
+	response = {
+		'status': 'ok'
+	}
+	items = []
+	for entity in data:
+		labels = []
+		for label in data[entity]['labels']:
+			labels.append(data[entity]['labels'][label])
+		descriptions = []
+		for description in data[entity]['descriptions']:
+			descriptions.append(data[entity]['descriptions'][description])
+		items.append({
+			'labels': labels,
+			'descriptions': descriptions
+		})
+	response['item']
+	return jsonify(response)
+
 def langs():
 	params = {
 		"action": "sitematrix",
