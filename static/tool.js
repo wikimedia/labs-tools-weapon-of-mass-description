@@ -4,7 +4,7 @@ function sendForm() {
 	var items = $("input[name^='new_label_']");
 	for (var i = 0; i < items.length; i++) {
 		var label = items[i].value;
-		var description = $("input[name=" + items[i].name.replace('label', 'description') + "]").value();
+		var description = $("input[name=" + items[i].name.replace('label', 'description') + "]").val();
 		var qid = items[i].name.replace('new_label_', '');
 		console.log(label);
 		console.log(description);
