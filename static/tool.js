@@ -1,6 +1,10 @@
 function sendForm() {
 	swal("Your data are being processed right now");
 	$('#send').disabled = true;
+	var items = $("input[name^='new_label_']");
+	for (var i = 0; i < items.length; i++) {
+		console.log('Processing');
+	}
 }
 
 function fillItems() {
