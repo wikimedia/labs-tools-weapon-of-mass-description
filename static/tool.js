@@ -10,7 +10,8 @@ function sendForm() {
 		var imagepayload = {
 				'label': label,
 				'description': description,
-				'qid': qid
+				'qid': qid,
+				'lang': $('#langs').val()
 		};
 		payload.push(imagepayload);
 		console.log(qid);
