@@ -64,13 +64,16 @@ def index():
 @app.route('/api-item')
 def apiitem():
 	itemid = request.args.get('item')
+	langs = request.args.get('langs')
+	if not langs:
+		langs = "|".join(['en', 'de', 'fr'])
 	params = {
 		"action": "wbgetentities",
 		"format": "json",
 		"ids": itemid,
 		"redirects": "yes",
 		"props": "sitelinks|labels|descriptions",
-		"languages": "cs|en"
+		"languages": langs
 	}
 	r = requests.get(app.config['API_MWURI'], params=params)
 	data = r.json()['entities']
