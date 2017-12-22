@@ -11,14 +11,14 @@ function fillItems() {
 		$.getJSON(url, function (data) {
 			var labelhtml = "<ul>";
 			console.log(data);
-			for (var j = 0; i < data.items[0].labels.length; j++) {
+			for (var j = 0; j < data.items[0].labels.length; j++) {
 				var lang = data.items[0].labels[j].language;
 				var label = data.items[0].labels[j].value;
 				labelhtml += "<li>" + lang + ": " + label + "</li>";
 			}
 			labelhtml += "</ul>";
 			var descriptionhtml = "<ul>"
-			for (var j = 0; i < data.items[0].descriptions.length; j++) {
+			for (var j = 0; j < data.items[0].descriptions.length; j++) {
 				var lang = data.items[0].descriptions[j].language;
 				var description = data.items[0].descriptions[j].value;
 				descriptionhtml += "<li>" + lang + ": " + description + "</li>";
