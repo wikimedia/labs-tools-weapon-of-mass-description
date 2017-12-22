@@ -61,6 +61,67 @@ def index():
 	else:
 		return render_template('login.html', loggeed=logged(), username=getusername())
 
+def langs():
+	params = {
+		"action": "sitematrix",
+		"format": "json",
+		"smtype": "language",
+		"smstate": "all",
+		"smlangprop": "code|name",
+		"smlimit": "max"
+	}
+	r = requests.get(app.config['API_MWURI'], params=params)
+	data = r.json()
+	langs = []
+	for key in data['sitematrix'].keys():
+		if key != 'count':
+			langs.append({
+				'code': data['sitematrix'][key]['code'],
+				'name': data['sitematrix'][key]['name']
+			})
+	res = {
+		'status': 'ok',
+		'langs': sorted(langs, key=lambda k: k['name'])
+	}
+	return res
+
+@app.route('/api-langs')
+def apilangs():
+	return jsonify(langs())
+
+def blocked():
+	username = flask.session.get('username')
+	if username == None:
+		response = {
+			'status': 'error',
+			'errorcode': 'anonymoususe'
+		}
+		return response
+	payload = {
+		"action": "query",
+		"format": "json",
+		"list": "users",
+		"usprop": "blockinfo",
+		"ususers": username
+	}
+	r = requests.get(app.config['API_MWURI'], params=payload)
+	data = r.json()['query']['users'][0]
+	response = {
+		'status': 'ok',
+		'blockstatus': 'blockid' in data
+	}
+	if response['blockstatus']:
+		response['blockdata'] = {
+			'blockedby': data['blockedby'],
+			'blockexpiry': data['blockexpiry'],
+			'blockreason': data['blockreason']
+		}
+	return response
+
+@app.route('/api-blocked')
+def apiblocked():
+	return jsonify(blocked())
+
 @app.route('/login')
 def login():
 	"""Initiate an OAuth login.
