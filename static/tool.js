@@ -45,3 +45,18 @@ function fillItems() {
 		$('#send')[0].disabled = false;
 	}
 }
+
+
+$( document ).ready(function() {
+	$.getJSON('https://tools.wmflabs.org/weapon-of-mass-description/api-langs', function (data) {
+		for (var i = 0; i < data['langs'].length; i++) {
+			if (data['langs'][i]['code'] == 'cs') {
+				var row = '<option value="' + data['langs'][i]['code'] + '" selected>' + data['langs'][i]['name'] + '</option>';
+			}
+			else {
+				var row = '<option value="' + data['langs'][i]['code'] + '">' + data['langs'][i]['name'] + '</option>';
+			}
+			$('#langs').append(row);
+		}
+	});
+});
