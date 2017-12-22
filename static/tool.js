@@ -8,6 +8,31 @@ function fillItems() {
 	for (var i = 0; i < items.length; i++) {
 		var item = items[i];
 		var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-item?item=' + item;
-		console.log(url);
+		$.getJSON(url, function (data) {
+			var labelhtml = "<ul>";
+			for (var i = 0; i < data[0].labels.length; i++) {
+				var lang = data[0].labels[i].language;
+				var label = data[0].labels[i].value;
+				labelhtml += "<li>" + lang + ": " + label + "</li>";
+			}
+			labelhtml += "</ul>";
+			var html = `
+			<tr>
+					<td>` + item + `</td>
+					<td>
+							<div class="input-field">
+									<input placeholder="new label" name="new_label_` + item + `" type="text">
+							</div>
+					<td>
+							<div class="input-field">
+									<input placeholder="new description" id="new_description_` + item + `" type="text">
+							</div>
+					</td>
+					<td>Wikipedia</td>
+					<td>` + labelhtml + `</td>
+					<td>$3.76</td>
+			</tr>`;
+			$('tbody').append(html);
+		});
 	}
 }
