@@ -4,6 +4,7 @@ function sendForm() {
 }
 
 function fillItems() {
+	$('tbody').empty();
 	var items = $('#items').val().split('\n');
 	for (var i = 0; i < items.length; i++) {
 		var item = items[i];
