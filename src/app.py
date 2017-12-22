@@ -89,7 +89,7 @@ def apiitem():
 			'labels': labels,
 			'descriptions': descriptions
 		})
-	response['item']
+	response['items'] = items
 	return jsonify(response)
 
 def langs():
