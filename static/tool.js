@@ -3,7 +3,12 @@ function sendForm() {
 	$('#send').disabled = true;
 	var items = $("input[name^='new_label_']");
 	for (var i = 0; i < items.length; i++) {
-		console.log('Processing');
+		var label = items[i].value;
+		var description = $("input[name=" + items[i].name.replace('label', 'description') + "]").value();
+		var qid = items[i].name.replace('new_label_', '');
+		console.log(label);
+		console.log(description);
+		console.log(qid);
 	}
 }
 
