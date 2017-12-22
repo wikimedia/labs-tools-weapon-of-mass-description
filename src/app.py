@@ -122,6 +122,100 @@ def apiitem():
 	response['items'] = items
 	return jsonify(response)
 
+def edit(qid, lang, label, description):
+	request_token_secret = flask.session.get('request_token_secret', None)
+	request_token_key = flask.session.get('request_token_key', None)
+	auth = OAuth1(key, secret, request_token_key, request_token_secret)
+	payload = {
+		"action": "query",
+		"format": "json",
+		"meta": "tokens",
+		"type": "csrf"
+	}
+	r = requests.get(
+		app.config['API_MWURI'],
+		params=payload,
+		auth=auth
+	)
+	token = r.json()['query']['tokens']['csrftoken']
+	payload = {
+		"action": "wbsetlabel",
+		"format": "json",
+		"id": "Q4115189",
+		"token": token,
+		"language": language,
+		"value": label
+	}
+	r = requests.post(
+		app.config['API_MWURI'],
+		data=payload,
+		auth=auth
+	)
+	data = r.json()
+	payload = {
+		"action": "query",
+		"format": "json",
+		"meta": "tokens",
+		"type": "csrf"
+	}
+	r = requests.get(
+		app.config['API_MWURI'],
+		params=payload,
+		auth=auth
+	)
+	token = r.json()['query']['tokens']['csrftoken']
+	payload = {
+		"action": "wbsetdescription",
+		"format": "json",
+		"id": "Q4115189",
+		"token": token,
+		"language": language,
+		"value": label
+	}
+	r = requests.post(
+		app.config['API_MWURI'],
+		data=payload,
+		auth=auth
+	)
+	data = r.json()
+	return True
+
+@app.route('/api-edit')
+def apiedit():
+	data = request.get_json()
+	languages = langs()['langs']
+	langcodes = []
+	for item in languages:
+		langcodes.append(item['code'])
+	for item in data:
+		if 'label' not in item or 'description' not in item or 'lang' not in item or 'qid' not in item:
+			if 'qid' in item:
+				id = item['qid']
+			else:
+				id = 'n-a'
+			response = {
+				'status': 'error',
+				'errorcode': 'mustpassparams',
+				'qid': id
+			}
+			return make_response(jsonify(response), 400)
+		if item['lang'] not in langcodes:
+			response = {
+				'status': 'error',
+				'errorcode': 'nonexistentlang',
+				'id': image['id']
+			}
+			return make_response(jsonify(response), 400)
+		res = edit(item['qid'], item['lang'], item['label'], item['description'])
+		if not res:
+			response = {
+				'status': 'error',
+				'errorcode': 'unknown'
+			}
+			return make_response(jsonify(response), 500)
+	response = {'status': 'ok'}
+	return jsonify(response)
+
 def langs():
 	params = {
 		"action": "sitematrix",
