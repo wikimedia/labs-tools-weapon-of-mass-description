@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <h5>Language Select</h5>
+                <select class="browser-default">
+                    <option value="" disabled selected>Choose your Language</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </form>
+    </div>  
+
+    <table class="bordered">
+        <thead>
+            <tr>
+                <th>QID</th>
+                <th>New label</th>
+                <th>new description</th>
+                <th>Wikipedia article</th>
+                <th>Old label</th>
+                <th>Old description</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <div class="input-field">
+                        <input placeholder="QID" id="QID" type="text">
+                    </div>
+                </td>
+                <td>
+                    <div class="input-field">
+                        <input placeholder="new label" id="new_label" type="text">
+                    </div>
+                <td>$0.87</td>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}
