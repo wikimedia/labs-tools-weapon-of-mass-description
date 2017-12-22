@@ -11,12 +11,19 @@ function fillItems() {
 		$.getJSON(url, function (data) {
 			var labelhtml = "<ul>";
 			console.log(data);
-			for (var i = 0; i < data.items[0].labels.length; i++) {
-				var lang = data.items[0].labels[i].language;
-				var label = data.items[0].labels[i].value;
+			for (var j = 0; i < data.items[0].labels.length; j++) {
+				var lang = data.items[0].labels[j].language;
+				var label = data.items[0].labels[j].value;
 				labelhtml += "<li>" + lang + ": " + label + "</li>";
 			}
 			labelhtml += "</ul>";
+			var descriptionhtml = "<ul>"
+			for (var j = 0; i < data.items[0].descriptions.length; j++) {
+				var lang = data.items[0].descriptions[j].language;
+				var description = data.items[0].descriptions[j].value;
+				descriptionhtml += "<li>" + lang + ": " + description + "</li>";
+			}
+			descriptionhtml += "</ul>";
 			var html = `
 			<tr>
 					<td>` + item + `</td>
@@ -31,7 +38,7 @@ function fillItems() {
 					</td>
 					<td>Wikipedia</td>
 					<td>` + labelhtml + `</td>
-					<td>$3.76</td>
+					<td>` + descriptionhtml + `</td>
 			</tr>`;
 			$('tbody').append(html);
 		});
