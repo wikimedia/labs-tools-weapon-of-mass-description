@@ -126,58 +126,60 @@ def edit(qid, language, label, description):
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
-	payload = {
-		"action": "query",
-		"format": "json",
-		"meta": "tokens",
-		"type": "csrf"
-	}
-	r = requests.get(
-		app.config['API_MWURI'],
-		params=payload,
-		auth=auth
-	)
-	token = r.json()['query']['tokens']['csrftoken']
-	payload = {
-		"action": "wbsetlabel",
-		"format": "json",
-		"id": "Q4115189",
-		"token": token,
-		"language": language,
-		"value": label
-	}
-	r = requests.post(
-		app.config['API_MWURI'],
-		data=payload,
-		auth=auth
-	)
-	data = r.json()
-	payload = {
-		"action": "query",
-		"format": "json",
-		"meta": "tokens",
-		"type": "csrf"
-	}
-	r = requests.get(
-		app.config['API_MWURI'],
-		params=payload,
-		auth=auth
-	)
-	token = r.json()['query']['tokens']['csrftoken']
-	payload = {
-		"action": "wbsetdescription",
-		"format": "json",
-		"id": "Q4115189",
-		"token": token,
-		"language": language,
-		"value": label
-	}
-	r = requests.post(
-		app.config['API_MWURI'],
-		data=payload,
-		auth=auth
-	)
-	data = r.json()
+	if label != '':
+		payload = {
+			"action": "query",
+			"format": "json",
+			"meta": "tokens",
+			"type": "csrf"
+		}
+		r = requests.get(
+			app.config['API_MWURI'],
+			params=payload,
+			auth=auth
+		)
+		token = r.json()['query']['tokens']['csrftoken']
+		payload = {
+			"action": "wbsetlabel",
+			"format": "json",
+			"id": "Q4115189",
+			"token": token,
+			"language": language,
+			"value": label
+		}
+		r = requests.post(
+			app.config['API_MWURI'],
+			data=payload,
+			auth=auth
+		)
+		data = r.json()
+	if description != '':
+		payload = {
+			"action": "query",
+			"format": "json",
+			"meta": "tokens",
+			"type": "csrf"
+		}
+		r = requests.get(
+			app.config['API_MWURI'],
+			params=payload,
+			auth=auth
+		)
+		token = r.json()['query']['tokens']['csrftoken']
+		payload = {
+			"action": "wbsetdescription",
+			"format": "json",
+			"id": "Q4115189",
+			"token": token,
+			"language": language,
+			"value": label
+		}
+		r = requests.post(
+			app.config['API_MWURI'],
+			data=payload,
+			auth=auth
+		)
+		data = r.json()
 	return True
 
 @app.route('/api-edit', methods=['post'])
