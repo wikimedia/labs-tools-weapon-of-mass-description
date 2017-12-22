@@ -42,7 +42,7 @@ function fillItems() {
 							</div>
 					<td>
 							<div class="input-field">
-									<input placeholder="new description" id="new_description_` + item + `" type="text">
+									<input placeholder="new description" name="new_description_` + item + `" type="text">
 							</div>
 					</td>
 					<td>Wikipedia</td>
