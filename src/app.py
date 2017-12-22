@@ -142,7 +142,7 @@ def edit(qid, language, label, description):
 		payload = {
 			"action": "wbsetlabel",
 			"format": "json",
-			"id": "Q4115189",
+			"id": qid,
 			"token": token,
 			"language": language,
 			"value": label
@@ -169,7 +169,7 @@ def edit(qid, language, label, description):
 		payload = {
 			"action": "wbsetdescription",
 			"format": "json",
-			"id": "Q4115189",
+			"id": qid,
 			"token": token,
 			"language": language,
 			"value": label
