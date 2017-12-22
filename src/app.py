@@ -67,7 +67,7 @@ def apiitem():
 	params = {
 		"action": "wbgetentities",
 		"format": "json",
-		"ids": "Q1",
+		"ids": itemid,
 		"redirects": "yes",
 		"props": "sitelinks|labels|descriptions",
 		"languages": "cs|en"
