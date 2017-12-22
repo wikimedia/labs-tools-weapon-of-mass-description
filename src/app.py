@@ -59,7 +59,7 @@ def index():
 	if username is not None:
 		return render_template('tool.html', logged=logged(),username=getusername())
 	else:
-		return render_template('login.html', loggeed=logged(), username=getusername())
+		return render_template('login.html', logged=logged(), username=getusername())
 
 @app.route('/report', methods=['get', 'post'])
 def report():
