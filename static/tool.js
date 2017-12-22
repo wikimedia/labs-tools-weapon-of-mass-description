@@ -41,5 +41,6 @@ function fillItems() {
 			</tr>`;
 			$('tbody').append(html);
 		});
+		$('#send')[0].disabled = false;
 	}
 }
