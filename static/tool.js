@@ -10,7 +10,6 @@ function fillItems() {
 		var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-item?item=' + item;
 		$.getJSON(url, function (data) {
 			var labelhtml = "<ul>";
-			console.log(data);
 			for (var j = 0; j < data.items[0].labels.length; j++) {
 				var lang = data.items[0].labels[j].language;
 				var label = data.items[0].labels[j].value;
