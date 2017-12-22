@@ -12,7 +12,7 @@ function sendForm() {
 				'description': description,
 				'qid': qid
 		};
-		payload.pushd(imagepayload);
+		payload.push(imagepayload);
 		console.log(qid);
 	}
 	$.postJSON('https://tools.wmflabs.org/weapon-of-mass-description/api-edit', payload, function (data) {
