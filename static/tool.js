@@ -29,6 +29,9 @@ function fillItems() {
 	for (var i = 0; i < items.length; i++) {
 		var item = items[i];
 		var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-item?item=' + item;
+		if ($('#spokablelangs').val() != "") {
+			url += "&langs=" + $('#spokablelangs').val().replaceAll('\n', '|');
+		}
 		$.getJSON(url, function (data) {
 			var labelhtml = "<ul>";
 			for (var j = 0; j < data.items[0].labels.length; j++) {
