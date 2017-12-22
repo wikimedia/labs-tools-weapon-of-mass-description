@@ -2,14 +2,24 @@ function sendForm() {
 	swal("Your data are being processed right now");
 	$('#send').disabled = true;
 	var items = $("input[name^='new_label_']");
+	var payload = [];
 	for (var i = 0; i < items.length; i++) {
 		var label = items[i].value;
 		var description = $("input[name=" + items[i].name.replace('label', 'description') + "]").val();
 		var qid = items[i].name.replace('new_label_', '');
-		console.log(label);
-		console.log(description);
+		var imagepayload = {
+				'label': label,
+				'description': description,
+				'qid': qid
+		};
+		payload.pushd(imagepayload);
 		console.log(qid);
 	}
+	$.postJSON('https://tools.wmflabs.org/weapon-of-mass-description/api-edit', payload, function (data) {
+		console.log(data);
+		$('#send')[0].disabled = false;
+		$('tbody').empty();
+	})
 }
 
 function fillItems() {
