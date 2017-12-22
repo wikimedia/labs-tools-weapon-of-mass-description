@@ -11,9 +11,9 @@ function fillItems() {
 		$.getJSON(url, function (data) {
 			var labelhtml = "<ul>";
 			console.log(data);
-			for (var i = 0; i < data[0].labels.length; i++) {
-				var lang = data[0].labels[i].language;
-				var label = data[0].labels[i].value;
+			for (var i = 0; i < data.items[0].labels.length; i++) {
+				var lang = data.items[0].labels[i].language;
+				var label = data.items[0].labels[i].value;
 				labelhtml += "<li>" + lang + ": " + label + "</li>";
 			}
 			labelhtml += "</ul>";
