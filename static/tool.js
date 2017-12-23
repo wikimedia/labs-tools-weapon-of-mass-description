@@ -28,7 +28,7 @@ function fillItems() {
 	var items = $('#items').val().split('\n');
 	for (var i = 0; i < items.length; i++) {
 		var item = items[i];
-		var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-item?item=' + item;
+		var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-item?item=' + item + '&lang=' + $('#langs').val();
 		if ($('#spokablelangs').val() != "") {
 			url += "&langs=" + $('#spokablelangs').val().replaceAll('\n', '|');
 		}
