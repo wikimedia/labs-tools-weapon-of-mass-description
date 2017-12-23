@@ -47,16 +47,24 @@ function fillItems() {
 				descriptionhtml += "<li>" + lang + ": " + description + "</li>";
 			}
 			descriptionhtml += "</ul>";
+			var enableDescription = "";
+			if (data.items[0].enableDescription == false) {
+				enableDescription = "diabled";
+			}
+			var enableLabel = "";
+			if (data.items[0].enableLabel = false) {
+				enablelabel = "disabled";
+			}
 			var html = `
 			<tr>
 					<td><a href="https://wikidata.org/entity/` + item + `">` + item + `</a></td>
 					<td>
 							<div class="input-field">
-									<input placeholder="new label" name="new_label_` + item + `" type="text">
+									<input ` + enableLabel + ` placeholder="new label" name="new_label_` + item + `" type="text">
 							</div>
 					<td>
 							<div class="input-field">
-									<input placeholder="new description" name="new_description_` + item + `" type="text">
+									<input ` + enableDescription + ` placeholder="new description" name="new_description_` + item + `" type="text">
 							</div>
 					</td>
 					<td>Wikipedia</td>
