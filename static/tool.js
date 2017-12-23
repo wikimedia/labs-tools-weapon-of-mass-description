@@ -49,7 +49,7 @@ function fillItems() {
 			descriptionhtml += "</ul>";
 			var html = `
 			<tr>
-					<td>` + item + `</td>
+					<td><a href="https://wikidata.org/entity/` + item + `">` + item + `</a></td>
 					<td>
 							<div class="input-field">
 									<input placeholder="new label" name="new_label_` + item + `" type="text">
