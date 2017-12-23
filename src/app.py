@@ -87,6 +87,30 @@ def report():
 	else:
 		return flask.render_template('login.html', logged=logged(), username=getusername())
 
+@app.route('/users')
+def users():
+	conn = toolforge.connect('wikidatawiki')
+	with conn.cursor() as cur:
+		sql = 'select rev_user_text, count(*) from change_tag join revision on ct_rev_id=rev_id where ct_tag="OAuth CID: 998" and rev_user>0 group by rev_user order by count(*) desc;'
+		cur.execute(sql)
+		data = cur.fetchall()
+	users = []
+	for user in data:
+		rowres = []
+		for item in user:
+			if type(item) == type(b'a'):
+				rowres.append(item.decode('utf-8'))
+			else:
+				rowres.append(item)
+		users.append(rowres)
+	with conn.cursor() as cur:
+		sql = 'select count(*) from change_tag join revision on ct_rev_id=rev_id where ct_tag="OAuth CID: 998" and rev_user>0;'
+		cur.execute(sql)
+		data = cur.fetchall()
+	total = data[0][0]
+	return flask.render_template('users.html', users=users, total=total, logged=logged(), username=getusername())
+
+
 @app.route('/api-item')
 def apiitem():
 	itemid = request.args.get('item')
