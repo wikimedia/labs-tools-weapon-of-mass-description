@@ -126,9 +126,9 @@ def described(qid, lang):
 	payload = {
 		"action": "wbgetentities",
 		"format": "json",
-		"ids": "Q2555799",
+		"ids": qid,
 		"props": "labels|descriptions",
-		"languages": "cs"
+		"languages": lang
 	}
 	r = requests.get(app.config['API_MWURI'], params=payload)
 	data = r.json()['entities'][qid]
