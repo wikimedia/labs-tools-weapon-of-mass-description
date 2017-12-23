@@ -91,6 +91,9 @@ def report():
 def apiitem():
 	itemid = request.args.get('item')
 	langs = request.args.get('langs')
+	lang = request.args.get('lang')
+	if not lang:
+		lang = 'cs'
 	if not langs:
 		langs = "|".join(['en', 'de', 'fr'])
 	params = {
@@ -108,6 +111,9 @@ def apiitem():
 	}
 	items = []
 	for entity in data:
+		dataDescribed = described(entity, lang)
+		if dataDescribed['describedDescription'] and dataDescribed['describedLabels']:
+			continue
 		labels = []
 		for label in data[entity]['labels']:
 			labels.append(data[entity]['labels'][label])
@@ -117,6 +123,8 @@ def apiitem():
 		items.append({
 			'labels': labels,
 			'descriptions': descriptions,
+			'enableDescription': not dataDescribed['describedDescription'],
+			'enableLabel': not dataDescribed['describedLabels'],
 			'qid': entity,
 		})
 	response['items'] = items
