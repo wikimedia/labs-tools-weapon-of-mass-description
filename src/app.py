@@ -122,6 +122,31 @@ def apiitem():
 	response['items'] = items
 	return jsonify(response)
 
+def described(qid, lang):
+	payload = {
+		"action": "wbgetentities",
+		"format": "json",
+		"ids": "Q2555799",
+		"props": "labels|descriptions",
+		"languages": "cs"
+	}
+	r = requests.get(app.config['API_MWURI'], params=payload)
+	data = r.json()['entities'][qid]
+	reponse = {
+		'status': 'ok',
+		'qid': qid,
+		'lang': lang,
+		'describedLabels': lang in data['labels'],
+		'describedDescription': lang in data['descriptions']
+	}
+	return response
+
+@app.route('/api-described')
+def apidescribed():
+	qid = request.args.get('qid')
+	lang = request.args.get('lang')
+	return jsonify(described(qid, lang))
+
 def edit(qid, language, label, description):
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
