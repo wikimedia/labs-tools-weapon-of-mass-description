@@ -151,7 +151,8 @@ def edit(qid, language, label, description):
 	request_token_secret = flask.session.get('request_token_secret', None)
 	request_token_key = flask.session.get('request_token_key', None)
 	auth = OAuth1(key, secret, request_token_key, request_token_secret)
-	if label != '':
+	dataDescribed = described(qid, language)
+	if label != '' and not dataDescribed['describedLabels']:
 		payload = {
 			"action": "query",
 			"format": "json",
@@ -178,7 +179,7 @@ def edit(qid, language, label, description):
 			auth=auth
 		)
 		data = r.json()
-	if description != '':
+	if description != '' and not dataDescribed['describedDescription']:
 		payload = {
 			"action": "query",
 			"format": "json",
