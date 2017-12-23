@@ -49,10 +49,10 @@ function fillItems() {
 			descriptionhtml += "</ul>";
 			var enableDescription = "";
 			if (data.items[0].enableDescription == false) {
-				enableDescription = "diabled";
+				enableDescription = "disabled";
 			}
 			var enableLabel = "";
-			if (data.items[0].enableLabel = false) {
+			if (data.items[0].enableLabel == false) {
 				enablelabel = "disabled";
 			}
 			var html = `
