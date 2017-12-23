@@ -48,12 +48,10 @@ function fillItems() {
 			}
 			descriptionhtml += "</ul>";
 			var enableDescription = "";
-			console.log(data.items[0].enableDescription);
 			if (data.items[0].enableDescription == false) {
 				enableDescription = "disabled";
 			}
 			var enableLabel = "";
-			console.log(data.items[0].enableLabel);
 			if (data.items[0].enableLabel == false) {
 				enableLabel = "disabled";
 			}
