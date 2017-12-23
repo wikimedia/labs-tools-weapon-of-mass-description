@@ -55,7 +55,7 @@ function fillItems() {
 			var enableLabel = "";
 			console.log(data.items[0].enableLabel);
 			if (data.items[0].enableLabel == false) {
-				enablelabel = "disabled";
+				enableLabel = "disabled";
 			}
 			var html = `
 			<tr>
