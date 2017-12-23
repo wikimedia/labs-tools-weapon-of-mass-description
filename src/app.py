@@ -132,7 +132,7 @@ def described(qid, lang):
 	}
 	r = requests.get(app.config['API_MWURI'], params=payload)
 	data = r.json()['entities'][qid]
-	reponse = {
+	response = {
 		'status': 'ok',
 		'qid': qid,
 		'lang': lang,
