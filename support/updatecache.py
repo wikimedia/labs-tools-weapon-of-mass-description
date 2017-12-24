@@ -55,6 +55,7 @@ for term_type in TERM_TYPES:
 		wdconn = wdconnect()
 		with wdconn.cursor() as cur:
 			sql = 'select term_entity_id from wb_terms where term_entity_id not in (select term_entity_id from wb_terms where term_type="%s" and term_language="%s")' % (term_type, lang)
+			print(sql)
 			cur.execute(sql)
 			tconn = tconnect()
 			for row in ResultIter(cur):
