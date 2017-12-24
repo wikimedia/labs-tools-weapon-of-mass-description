@@ -37,11 +37,21 @@ with tconn.cursor() as cur:
 		entity_id int
 	)'''
 	cur.execute(sql)
-with wdconn.cursor() as wdcur:
-	sql = 'select page_title, cast(replace(page_title, "Q", "") as int) from page where page_namespace=0 and page_is_redirect=0'
-	wdcur.execute(sql)
+
+limit = 1000
+offset = 0
+cont = True
+while cont:
+	wdconn = wdconnect()
 	tconn = tconnect()
-	for row in ResultIter(cur):
-		with tconn.cursor() as tcur:
-			sql = 'insert into items(full_entity_id, entity_id) values("%s", %s)' % (row[0], row[1])
-			tcur.execute(sql)
+	with wdconn.cursor() as wdcur:
+		sql = 'select page_title from page where page_namespace=0 and page_is_redirect=0 limit %s offset %s' % (limit, offset)
+		wdcur.execute(sql)
+		if wdcur.rowcount < limit:
+			cont = False
+		else:
+			offset += limit
+		for row in ResultIter(wdcur):
+			with tconn.cursor() as tcur:
+				sql = 'insert into items(full_entity_id, entity_id) values ("%s", %s)' % (row[0], int(row[0].replace('Q', '')))
+				tcur.execute(sql)
