@@ -27,9 +27,9 @@ def tconnect():
 
 TERM_TYPES = ['label', 'description']
 
+# Get all languages from database
 tconn = tconnect()
 with tconn.cursor() as cur:
-	#sql = 'select distinct term_language from wb_terms where term_type="label"'
 	sql = 'select language from langs'
 	cur.execute(sql)
 	data = cur.fetchall()
@@ -37,39 +37,22 @@ with tconn.cursor() as cur:
 	for row in data:
 		langs.append(row[0])
 
+with tconn.cursor() as cur:
+	sql = 'drop table if exists yes'
+	cur.execute(sql)
+with tconn.cursor() as cur:
+	sql = 'create table yes (qid varchar(255), lang varchar(20), type varchar(20));'
+	cur.execute(sql)
+
 for term_type in TERM_TYPES:
-	table = 'no_%s' % (term_type, )
-	tconn = tconnect()
-	with tconn.cursor() as cur:
-		sql = 'drop table if exists %s_new' % (table, )
-		cur.execute(sql)
-	with tconn.cursor() as cur:
-		sql = '''create table %s_new
-		(
-			qid varchar(256),
-			language varchar(256)
-		)
-		''' % (table, )
-		cur.execute(sql)
 	for lang in langs:
 		wdconn = wdconnect()
-		with wdconn.cursor() as cur:
-			sql = 'select page_title from page where cast(replace(page_title, "Q", "") as int) not in (select term_entity_id from wb_terms where term_type="%s" and term_language="%s") and page_namespace=0 and page_is_redirect=0' % (term_type, lang)
-			print(sql)
-			cur.execute(sql)
+		with wdconn.cursor() as wdcur:
+			sql = 'select term_entity_id from wb_terms where term_type="%s" and term_language="%s";' % (term_type, lang)
+			wdcur.execute(sql)
 			tconn = tconnect()
-			for row in ResultIter(cur):
-				with tconn.cursor() as cur2:
-					sql = 'insert into %s_new(qid, language) values ("%s", "%s")' % (table, row[0], lang)
-					cur2.execute(sql)
+			for row in ResultIter(wdcur):
+				with tconn.cursor() as tcur:
+					sql = 'insert into yes(qid, lang, type) values ("Q%s", "%s", "%s")' % (row[0], lang, term_type)
+					tcur.execute(sql)
 		break # debug
-	tconn = tconnect()
-	with tconn.cursor() as cur:
-		sql = 'drop table if exists %s_old' % (table, )
-		cur.execute(sql)
-	with tconn.cursor() as cur:
-		sql = 'alter table %s rename to %s_old' % (table, table)
-		cur.execute(sql)
-	with tconn.cursor() as cur:
-		sql = 'alter table %s_new rename to %s' % (table, table)
-		cur.execute(sql)
