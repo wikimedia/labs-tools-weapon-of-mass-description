@@ -38,20 +38,26 @@ with tconn.cursor() as cur:
 	)'''
 	cur.execute(sql)
 
-limit = 1000
+limit = 5
 offset = 0
 cont = True
-while cont:
-	wdconn = wdconnect()
-	tconn = tconnect()
-	with wdconn.cursor() as wdcur:
-		sql = 'select page_title from page where page_namespace=0 and page_is_redirect=0 limit %s offset %s' % (limit, offset)
-		wdcur.execute(sql)
-		if wdcur.rowcount < limit:
-			cont = False
-		else:
-			offset += limit
-		for row in ResultIter(wdcur):
-			with tconn.cursor() as tcur:
-				sql = 'insert into items(full_entity_id, entity_id) values ("%s", %s)' % (row[0].decode('utf-8'), int(row[0].decode('utf-8').replace('Q', '')))
-				tcur.execute(sql)
+with open('/data/scratch/weapon-of-mass-description-add-items.sql', 'w') as f:
+	f.write('use s53612__weapon_of_mass_description_p;\n')
+	while cont:
+		cont = False
+		wdconn = wdconnect()
+		with wdconn.cursor() as wdcur:
+			sql = 'select page_title from page where page_namespace=0 and page_is_redirect=0 limit %s offset %s' % (limit, offset)
+			print(sql)
+			wdcur.execute(sql)
+			if wdcur.rowcount < limit:
+				cont = False
+			else:
+				offset += limit
+			for row in ResultIter(wdcur):
+				sql = 'insert into items(full_entity_id, entity_id) values ("%s", %s);' % (row[0].decode('utf-8'), int(row[0].decode('utf-8').replace('Q', '')))
+				print(sql)
+				f.write(sql + '\n')
+
+os.system('cat /data/scratch/weapon-of-mass-description-add-items.sql | sql local')
+os.remove('/data/scratch/weapon-of-mass-description-add-items.sql')
