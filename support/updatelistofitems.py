@@ -38,7 +38,7 @@ with tconn.cursor() as cur:
 	)'''
 	cur.execute(sql)
 
-limit = 5
+limit = 100
 offset = 0
 cont = True
 with open('/data/scratch/weapon-of-mass-description-add-items.sql', 'w') as f:
