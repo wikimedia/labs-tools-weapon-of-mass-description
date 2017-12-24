@@ -56,4 +56,3 @@ with open('/data/scratch/weapon-of-mass-description-updatecache.sql', 'w') as f:
 				for row in ResultIter(wdcur):
 					sql = 'insert into yes(qid, lang, type) values ("Q%s", "%s", "%s");\n' % (row[0], lang, term_type)
 					f.write(sql)
-			break # debug
