@@ -44,15 +44,16 @@ with tconn.cursor() as cur:
 	sql = 'create table yes (qid varchar(255), lang varchar(20), type varchar(20));'
 	cur.execute(sql)
 
-for term_type in TERM_TYPES:
-	for lang in langs:
-		wdconn = wdconnect()
-		with wdconn.cursor() as wdcur:
-			sql = 'select term_entity_id from wb_terms where term_type="%s" and term_language="%s";' % (term_type, lang)
-			wdcur.execute(sql)
-			tconn = tconnect()
-			for row in ResultIter(wdcur):
-				with tconn.cursor() as tcur:
-					sql = 'insert into yes(qid, lang, type) values ("Q%s", "%s", "%s")' % (row[0], lang, term_type)
-					tcur.execute(sql)
-		break # debug
+with open('/data/scratch/weapon-of-mass-description-updatecache.sql', 'w') as f:
+	f.write('use s53612__weapon_of_mass_description_p;\n')
+	for term_type in TERM_TYPES:
+		for lang in langs:
+			wdconn = wdconnect()
+			with wdconn.cursor() as wdcur:
+				sql = 'select term_entity_id from wb_terms where term_type="%s" and term_language="%s";' % (term_type, lang)
+				wdcur.execute(sql)
+				tconn = tconnect()
+				for row in ResultIter(wdcur):
+					sql = 'insert into yes(qid, lang, type) values ("Q%s", "%s", "%s");\n' % (row[0], lang, term_type)
+					f.write(sql)
+			break # debug
