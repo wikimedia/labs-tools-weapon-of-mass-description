@@ -54,13 +54,13 @@ for term_type in TERM_TYPES:
 	for lang in langs:
 		wdconn = wdconnect()
 		with wdconn.cursor() as cur:
-			sql = 'select term_entity_id from wb_terms where term_entity_id not in (select term_entity_id from wb_terms where term_type="%s" and term_language="%s")' % (term_type, lang)
+			sql = 'select page_title from page where cast(replace(page_title, "Q", "") as int) not in (select term_entity_id from wb_terms where term_type="%s" and term_language="%s") and page_namespace=0 and page_is_redirect=0' % (term_type, lang)
 			print(sql)
 			cur.execute(sql)
 			tconn = tconnect()
 			for row in ResultIter(cur):
 				with tconn.cursor() as cur2:
-					sql = 'insert into %s_new(qid, language) values ("Q%s", "%s")' % (table, row[0], lang)
+					sql = 'insert into %s_new(qid, language) values ("%s", "%s")' % (table, row[0], lang)
 					cur2.execute(sql)
 		break # debug
 	tconn = tconnect()
