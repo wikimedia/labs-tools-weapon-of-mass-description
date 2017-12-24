@@ -53,6 +53,7 @@ for term_type in TERM_TYPES:
 				with tconn.cursor() as cur2:
 					sql = 'insert into %s_new(qid, language) values ("Q%s", "%s")' % (table, row[0], lang)
 					cur2.execute(sql)
+		break # debug
 	with tconn.cursor() as cur:
 		sql = 'drop table if exists %s_old' % (table, )
 		cur.execute(sql)
