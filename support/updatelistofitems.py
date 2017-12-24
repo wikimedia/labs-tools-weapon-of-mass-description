@@ -53,5 +53,5 @@ while cont:
 			offset += limit
 		for row in ResultIter(wdcur):
 			with tconn.cursor() as tcur:
-				sql = 'insert into items(full_entity_id, entity_id) values ("%s", %s)' % (row[0], int(row[0].replace('Q', '')))
+				sql = 'insert into items(full_entity_id, entity_id) values ("%s", %s)' % (row[0].decode('utf-8'), int(row[0].decode('utf-8').replace('Q', '')))
 				tcur.execute(sql)
