@@ -17,7 +17,7 @@ def ResultIter(cursor, arraysize=1000):
 def wdconnect():
 	return toolforge.connect('wikidatawiki', cluster='analytics')
 
-def tconnect()
+def tconnect():
 	return pymysql.connect(
 		database='s53612__weapon_of_mass_description_p',
 		host='tools.db.svc.eqiad.wmflabs',
