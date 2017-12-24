@@ -15,7 +15,7 @@ with wdconn.cursor() as cur:
 with open('/data/scratch/weapon-of-mass-description-update-langs.sql', 'w') as f:
 	f.write('use s53612__weapon_of_mass_description_p;\n')
 	f.write('drop table if exists langs;\n')
-	f.write('create table langs (language varchar(20));\n')
+	f.write('create table langs (language varchar(20), id INT NOT NULL AUTO_INCREMENT PRIMARY KEY);\n')
 	for row in data:
 		sql = 'insert into langs(language) values("%s")\n' % (row[0], )
 		f.write(sql)
