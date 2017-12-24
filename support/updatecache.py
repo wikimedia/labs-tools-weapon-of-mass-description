@@ -6,9 +6,9 @@ import pymysql
 import os
 
 def ResultIter(cursor, arraysize=1000):
-	 'An iterator that uses fetchmany to keep memory usage down'
-	 while True:
-	 	results = cursor.fetchmany(arraysize)
+	'An iterator that uses fetchmany to keep memory usage down'
+	while True:
+		results = cursor.fetchmany(arraysize)
 		if not results:
 			break
 		for result in results:
