@@ -14,7 +14,8 @@ def ResultIter(cursor, arraysize=1000):
 		for result in results:
 			yield result
 
-wdconn = toolforge.connect('wikidatawiki', cluster='analytics')
+def wdconnect():
+	return toolforge.connect('wikidatawiki', cluster='analytics')
 
 def tconnect()
 	return pymysql.connect(
@@ -51,6 +52,7 @@ for term_type in TERM_TYPES:
 		''' % (table, )
 		cur.execute(sql)
 	for lang in langs:
+		wdconn = wdconnect()
 		with wdconn.cursor() as cur:
 			sql = 'select term_entity_id from wb_terms where term_entity_id not in (select term_entity_id from wb_terms where term_type="%s" and term_language="%s")' % (term_type, lang)
 			cur.execute(sql)
@@ -60,6 +62,7 @@ for term_type in TERM_TYPES:
 					sql = 'insert into %s_new(qid, language) values ("Q%s", "%s")' % (table, row[0], lang)
 					cur2.execute(sql)
 		break # debug
+	tconn = tconnect()
 	with tconn.cursor() as cur:
 		sql = 'drop table if exists %s_old' % (table, )
 		cur.execute(sql)
