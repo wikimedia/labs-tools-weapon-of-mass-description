@@ -5,7 +5,7 @@ import toolforge
 import pymysql
 import os
 
-def ResultIter(cursor, arraysize=1000):
+def ResultIter(cursor, arraysize=100):
 	'An iterator that uses fetchmany to keep memory usage down'
 	while True:
 		results = cursor.fetchmany(arraysize)
