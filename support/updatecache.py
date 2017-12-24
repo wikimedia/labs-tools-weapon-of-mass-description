@@ -15,17 +15,21 @@ def ResultIter(cursor, arraysize=1000):
 			yield result
 
 wdconn = toolforge.connect('wikidatawiki', cluster='analytics')
-tconn = pymysql.connect(
-	database='s53612__weapon_of_mass_description_p',
-	host='tools.db.svc.eqiad.wmflabs',
-	read_default_file=os.path.expanduser("~/replica.my.cnf"),
-	charset='utf8mb4',
-)
+
+def tconnect()
+	return pymysql.connect(
+		database='s53612__weapon_of_mass_description_p',
+		host='tools.db.svc.eqiad.wmflabs',
+		read_default_file=os.path.expanduser("~/replica.my.cnf"),
+		charset='utf8mb4',
+	)
 
 TERM_TYPES = ['label', 'description']
 
-with wdconn.cursor() as cur:
-	sql = 'select distinct term_language from wb_terms where term_type="label"'
+tconn = tconnect()
+with tconn.cursor() as cur:
+	#sql = 'select distinct term_language from wb_terms where term_type="label"'
+	sql = 'select language from langs'
 	cur.execute(sql)
 	data = cur.fetchall()
 	langs = []
@@ -34,6 +38,7 @@ with wdconn.cursor() as cur:
 
 for term_type in TERM_TYPES:
 	table = 'no_%s' % (term_type, )
+	tconn = tconnect()
 	with tconn.cursor() as cur:
 		sql = 'drop table if exists %s_new' % (table, )
 		cur.execute(sql)
@@ -49,6 +54,7 @@ for term_type in TERM_TYPES:
 		with wdconn.cursor() as cur:
 			sql = 'select term_entity_id from wb_terms where term_entity_id not in (select term_entity_id from wb_terms where term_type="%s" and term_language="%s")' % (term_type, lang)
 			cur.execute(sql)
+			tconn = tconnect()
 			for row in ResultIter(cur):
 				with tconn.cursor() as cur2:
 					sql = 'insert into %s_new(qid, language) values ("Q%s", "%s")' % (table, row[0], lang)
