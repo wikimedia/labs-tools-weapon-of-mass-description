@@ -17,10 +17,16 @@
 								<p>That's important for knowing which labels&amp;descriptions should be displayed to you.</p>
 								<textarea id="spokablelangs" class="materialize-textarea" rows="8" cols="80"></textarea>
 								<h5>List of items to be described</h5>
-								<textarea id="items" class="materialize-textarea" rows="15" cols="80"></textarea>
-								<button onclick="fillItems()" class="btn wafes-effect wafes-light" type="button" id="search">Load items</button>
-								<button type="button" class="btn wafes-effect wafes-light" onclick="suggestItems()">Suggest some items</button>
-								<input type="number" id="loaditems" min="1" max="100" value="10">
+                                <textarea id="items" class="materialize-textarea" rows="15" cols="80"></textarea>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <button onclick="fillItems()" class="btn wafes-effect wafes-light" type="button" id="search">Load items</button>
+                                        <button type="button" class="btn wafes-effect wafes-light" onclick="suggestItems()">Suggest some items</button>
+                                    </div>
+                                    <div class="col s6">
+                                        <input type="number" id="loaditems" min="1" max="100" value="10">
+                                    </div>
+                                </div>
             </div>
         </form>
     </div>
