@@ -33,6 +33,7 @@ function fillItems() {
 			url += "&langs=" + $('#spokablelangs').val().replaceAll('\n', '|');
 		}
 		$.getJSON(url, function (data) {
+			var item = data.items[0].qid;
 			var labelhtml = "<ul>";
 			for (var j = 0; j < data.items[0].labels.length; j++) {
 				var lang = data.items[0].labels[j].language;
