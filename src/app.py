@@ -125,12 +125,14 @@ def users():
 @app.route('/api-suggestitems')
 def suggestitems():
 	wiki = request.args.get('wiki')
-	if wiki == None:
+	num = request.args.get('num')
+	if wiki == None or num == None:
 		response = {
 			'status': 'error',
 			'errorcode': 'mustpassparams'
 		}
 		return make_response(jsonify(response), 400)
+	num = int(num)
 	fallbacklang = 'sk'
 	conn = toolforge.connect(wiki)
 	with conn.cursor() as cur:
@@ -141,9 +143,19 @@ def suggestitems():
 		items = []
 		for row in data:
 			items.append(row[0])
+	nums = []
+	for i in range(0, num):
+		while True:
+			r = random.randint(0, len(items)-1)
+			if r not in nums:
+				nums.append(r)
+				break
+	itemspass = []
+	for num in nums:
+		itemspass.append(items[num])
 	response = {
 		'status': 'ok',
-		'items': items
+		'items': itemspass
 	}
 	return jsonify(response)
 
