@@ -69,10 +69,16 @@ function fillItems() {
 							</div>
 					</td>
 					<td>Wikipedia</td>
+					<td id="autodesc-` + item + `"></td>
 					<td>` + labelhtml + `</td>
 					<td>` + descriptionhtml + `</td>
 			</tr>`;
 			$('tbody').append(html);
+			var url = "https://tools.wmflabs.org/autodesc?q=" + item + "&lang=" + $('#langs').val() + "&mode=short&links=text&redlinks=&format=json&get_infobox=yes&infobox_template=";
+			$.getJSON(url, function (data) {
+				var id = "autodesc-" + data.q;
+				$('#' + id).text(data.result);
+			})
 		});
 		$('#send')[0].disabled = false;
 	}
