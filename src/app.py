@@ -88,6 +88,16 @@ def getcategories(wiki=None):
 			categories[sitename] = tmp
 	return categories
 
+def getsitenames():
+	conn = tconnect()
+	with conn.cursor() as cur:
+		sql = 'select distinct sitename from categories;'
+		cur.execute(sql)
+		data = cur.fetchall()
+		sitenames = []
+		for row in data:
+			sitenames.append(row[0])
+	return sitenames
 
 @app.route('/')
 def index():
