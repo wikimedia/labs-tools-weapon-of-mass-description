@@ -134,7 +134,8 @@ def suggestitems():
 	fallbacklang = 'sk'
 	conn = toolforge.connect(wiki)
 	with conn.cursor() as cur:
-		sql = "SELECT DISTINCT eu_entity_id FROM wbc_entity_usage WHERE eu_aspect = 'L.%s' AND eu_entity_id LIKE 'Q%'" % (fallbacklang)
+		sql = "SELECT DISTINCT eu_entity_id FROM wbc_entity_usage WHERE eu_aspect = 'L.%s' AND eu_entity_id LIKE 'Q@'" % (fallbacklang)
+		sql = sql.replace('@', '%') # TODO: Get rid of workaround
 		cur.execute(sql)
 		data = cur.fetchall()
 		items = []
