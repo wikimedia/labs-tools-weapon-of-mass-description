@@ -65,45 +65,11 @@ def after_request(response):
 	response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
 	return response
 
-def getcategories(wiki=None):
-	conn = tconnect()
-	if wiki == None:
-		with conn.cursor() as cur:
-			sql = 'select distinct sitename from categories;'
-			cur.execute(sql)
-			data = cur.fetchall()
-			sitenames = []
-			for row in data:
-				sitenames.append(row[0])
-	else:
-		sitenames = wiki.split('|')
-	categories = {}
-	for sitename in sitenames:
-		with conn.cursor() as cur:
-			sql = 'select categoryname from categories where sitename="%s"' % (sitename, )
-			cur.execute(sql)
-			tmp = []
-			for row in cur.fetchall():
-				tmp.append(row[0])
-			categories[sitename] = tmp
-	return categories
-
-def getsitenames():
-	conn = tconnect()
-	with conn.cursor() as cur:
-		sql = 'select distinct sitename from categories;'
-		cur.execute(sql)
-		data = cur.fetchall()
-		sitenames = []
-		for row in data:
-			sitenames.append(row[0])
-	return sitenames
-
 @app.route('/')
 def index():
 	username = flask.session.get('username')
 	if username is not None:
-		return render_template('tool.html', logged=logged(),username=getusername(), sitenames=getsitenames(), categories=getcategories())
+		return render_template('tool.html', logged=logged(),username=getusername())
 	else:
 		return render_template('login.html', logged=logged(), username=getusername())
 
@@ -382,55 +348,6 @@ def blocked():
 @app.route('/api-blocked')
 def apiblocked():
 	return jsonify(blocked())
-
-
-@app.route('/api-suggestitems')
-def apisuggestitems():
-	categories = request.args.get('categories')
-	if categories == None:
-		response = {
-			'status': 'error',
-			'errorcode': 'mustpassparams'
-		}
-		return make_response(jsonify(response), 400)
-	else:
-		categories = categories.split('|')
-		toaddtosql = []
-		for category in categories:
-			toaddtosql.append('"%s"' % (category))
-		categories = ", \n".join(toaddtosql)
-	wiki = request.args.get('wiki')
-	if wiki == None:
-		response = {
-			'status': 'error',
-			'errorcode': 'mustpassparams'
-		}
-		return make_response(jsonify(response), 400)
-	conn = toolforge.connect(wiki)
-	with conn.cursor() as cur:
-		sql = '''select distinct eu_entity_id
-		from wbc_entity_usage
-		where
-		eu_page_id in
-		(
-			select cl_from
-			from categorylinks
-			where
-			cl_to in
-			(
-				''' + categories + '''
-			)
-		)'''
-		cur.execute(sql)
-		data = cur.fetchall()
-		items = []
-		for row in data:
-			items.append(row[0])
-	response = {
-		'status': 'ok',
-		'items': items
-	}
-	return jsonify(response)
 
 @app.route('/login')
 def login():
