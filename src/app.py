@@ -122,6 +122,30 @@ def users():
 	total = data[0][0]
 	return flask.render_template('users.html', users=users, total=total, logged=logged(), username=getusername())
 
+@app.route('/api-suggestitems')
+def suggestitems():
+	wiki = request.args.get('wiki')
+	if wiki == None:
+		response = {
+			'status': 'error',
+			'errorcode': 'mustpassparams'
+		}
+		return make_response(jsonify(response), 400)
+	fallbacklang = 'sk'
+	conn = toolforge.connect(wiki)
+	with conn.cursor() as cur:
+		sql = "SELECT DISTINCT eu_entity_id FROM wbc_entity_usage WHERE eu_aspect = 'L.%s'" % (fallbacklang)
+		cur.execute(sql)
+		data = cur.fetchall()
+		items = []
+		for row in data:
+			items.append(row[0])
+	response = {
+		'status': 'ok',
+		'items': items
+	}
+	return jsonify(response)
+
 
 @app.route('/api-item')
 def apiitem():
