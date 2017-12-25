@@ -133,7 +133,14 @@ def suggestitems():
 		}
 		return make_response(jsonify(response), 400)
 	num = int(num)
-	fallbacklang = 'sk'
+	url = 'https://%s.wikipedia.org/w/api.php' % (wiki.replace('wiki', ''), )
+	params = {
+		"action": "query",
+		"format": "json",
+		"meta": "siteinfo"
+	}
+	r = requests.get(url, params=params)
+	fallbacklang = r.json()['query']['general']['fallback'][0]['code']
 	conn = toolforge.connect(wiki)
 	with conn.cursor() as cur:
 		sql = "SELECT DISTINCT eu_entity_id FROM wbc_entity_usage WHERE eu_aspect = 'L.%s' AND eu_entity_id LIKE 'Q@'" % (fallbacklang)
