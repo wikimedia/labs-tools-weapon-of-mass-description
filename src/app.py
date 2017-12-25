@@ -65,6 +65,30 @@ def after_request(response):
 	response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
 	return response
 
+def getcategories(wiki=None):
+	conn = tconnect()
+	if wiki == None:
+		with conn.cursor() as cur:
+			sql = 'select distinct sitename from categories;'
+			cur.execute(sql)
+			data = cur.fetchall()
+			sitenames = []
+			for row in data:
+				sitenames.append(row[0])
+	else:
+		sitenames = wiki.split('|')
+	categories = {}
+	for sitename in sitenames:
+		with conn.cursor() as cur:
+			sql = 'select categoryname from categories where sitename="%s"' % (sitename, )
+			cur.execute(sql)
+			tmp = []
+			for row in cur.fetchall():
+				tmp.append(row[0])
+			categories[sitename] = tmp
+	return categories
+
+
 @app.route('/')
 def index():
 	username = flask.session.get('username')
