@@ -79,7 +79,7 @@ function fillItems() {
 
 function suggestItems() {
 	var wiki = $('#langs').val() + 'wiki';
-	var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-suggestitems?wiki=' + wiki;
+	var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-suggestitems?wiki=' + wiki + '&num=10';
 	$.getJSON(url, function (data) {
 		var items = data.items;
 		$('#items').val("");
