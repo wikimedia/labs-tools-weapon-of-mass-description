@@ -284,7 +284,7 @@ def edit(qid, language, label, description):
 			"id": qid,
 			"token": token,
 			"language": language,
-			"value": label
+			"value": description
 		}
 		r = requests.post(
 			app.config['API_MWURI'],
