@@ -15,6 +15,7 @@
 
 import flask
 import os
+import pymysql
 import yaml
 import simplejson as json
 import requests
@@ -39,6 +40,17 @@ app.config.update(yaml.safe_load(open(os.path.join(__dir__, 'config.yaml'))))
 
 key = app.config['CONSUMER_KEY']
 secret = app.config['CONSUMER_SECRET']
+
+def wdconnect():
+	return toolforge.connect('wikidatawiki')
+
+def tconnect():
+        return pymysql.connect(
+                database='s53612__weapon_of_mass_description_p',
+                host='tools.db.svc.eqiad.wmflabs',
+                read_default_file=os.path.expanduser("~/replica.my.cnf"),
+                charset='utf8mb4',
+        )
 
 def logged():
 	return flask.session.get('username') != None
