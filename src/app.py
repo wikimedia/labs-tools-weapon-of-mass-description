@@ -103,7 +103,7 @@ def getsitenames():
 def index():
 	username = flask.session.get('username')
 	if username is not None:
-		return render_template('tool.html', logged=logged(),username=getusername())
+		return render_template('tool.html', logged=logged(),username=getusername(), sitenames=getsitenames(), categories=getcategories())
 	else:
 		return render_template('login.html', logged=logged(), username=getusername())
 
