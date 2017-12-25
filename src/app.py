@@ -101,7 +101,7 @@ def report():
 
 @app.route('/users')
 def users():
-	conn = toolforge.connect('wikidatawiki')
+	conn = wdconnect()
 	with conn.cursor() as cur:
 		sql = 'select rev_user_text, count(*) from change_tag join revision on ct_rev_id=rev_id where ct_tag="OAuth CID: 998" and rev_user>0 group by rev_user order by count(*) desc;'
 		cur.execute(sql)
