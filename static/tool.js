@@ -20,6 +20,7 @@ function sendForm() {
 		console.log(data);
 		$('#send')[0].disabled = false;
 		$('tbody').empty();
+		$('#items').val("");
 	})
 }
 
