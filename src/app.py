@@ -383,6 +383,55 @@ def blocked():
 def apiblocked():
 	return jsonify(blocked())
 
+
+@app.route('/api-suggestitems')
+def apisuggestitems():
+	categories = request.args.get('categories')
+	if categories == None:
+		response = {
+			'status': 'error',
+			'errorcode': 'mustpassparams'
+		}
+		return make_response(jsonify(response), 400)
+	else:
+		categories = categories.split('|')
+		toaddtosql = []
+		for category in categories:
+			toaddtosql.append('"%s"' % (category))
+		categories = ", \n".join(toaddtosql)
+	wiki = request.args.get('wiki')
+	if wiki == None:
+		response = {
+			'status': 'error',
+			'errorcode': 'mustpassparams'
+		}
+		return make_response(jsonify(response), 400)
+	conn = toolforge.connect(wiki)
+	with conn.cursor() as cur:
+		sql = '''select distinct eu_entity_id
+		from wbc_entity_usage
+		where
+		eu_page_id in
+		(
+			select cl_from
+			from categorylinks
+			where
+			cl_to in
+			(
+				''' + categories + '''
+			)
+		)'''
+		cur.execute(sql)
+		data = cur.fetchall()
+		items = []
+		for row in data:
+			items.append(row[0])
+	response = {
+		'status': 'ok',
+		'items': items
+	}
+	return jsonify(response)
+
 @app.route('/login')
 def login():
 	"""Initiate an OAuth login.
