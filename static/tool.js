@@ -77,6 +77,20 @@ function fillItems() {
 	}
 }
 
+function suggestItems() {
+	var wiki = $('#langs').val() + 'wiki';
+	var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-suggestitems?wiki=' + wiki;
+	$.getJSON(url, function (data) {
+		var items = data.items;
+		$('#items').val("");
+		var itemstr = "";
+		for (var i = 0; i < items.length; i++) {
+			itemstr += items[i] + "\n";
+		}
+		$('#items').val(itemstr);
+	})
+}
+
 
 $( document ).ready(function() {
 	$.getJSON('https://tools.wmflabs.org/weapon-of-mass-description/api-langs', function (data) {
