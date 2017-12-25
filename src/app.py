@@ -138,21 +138,26 @@ def suggestitems():
 	with conn.cursor() as cur:
 		sql = "SELECT DISTINCT eu_entity_id FROM wbc_entity_usage WHERE eu_aspect = 'L.%s' AND eu_entity_id LIKE 'Q@'" % (fallbacklang)
 		sql = sql.replace('@', '%') # TODO: Get rid of workaround
-		cur.execute(sql)
+		rows = cur.execute(sql)
+		if rows/2<num:
+			num = None
 		data = cur.fetchall()
 		items = []
 		for row in data:
 			items.append(row[0])
 	nums = []
-	for i in range(0, num):
-		while True:
-			r = random.randint(0, len(items)-1)
-			if r not in nums:
-				nums.append(r)
-				break
-	itemspass = []
-	for num in nums:
-		itemspass.append(items[num])
+	if num != None:
+		for i in range(0, num):
+			while True:
+				r = random.randint(0, len(items)-1)
+				if r not in nums:
+					nums.append(r)
+					break
+		itemspass = []
+		for num in nums:
+			itemspass.append(items[num])
+	else:
+		itemspass = items
 	response = {
 		'status': 'ok',
 		'items': itemspass
