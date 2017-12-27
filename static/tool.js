@@ -40,9 +40,8 @@ function fillItems() {
 				var lang = data.items[0].labels[j].language;
 				var label = data.items[0].labels[j].value;
 				labelhtml += "<li>" + lang + ": " + label + ' (<a id="copy-label-' + lang + '-' + item + '" href="#">copy to new label</a>)</li>';
-				$('#copy-label-' + lang + '-' + item).on('click', function (event) {
-					console.log($(event.target).attr('id'));
-					return false;
+				$('#copy-label-' + lang + '-' + item).click(function() {
+				  console.log($(event.target).attr('id'));
 				});
 			}
 			labelhtml += "</ul>";
@@ -51,10 +50,9 @@ function fillItems() {
 				var lang = data.items[0].descriptions[j].language;
 				var description = data.items[0].descriptions[j].value;
 				descriptionhtml += "<li>" + lang + ": " + description + ' (<a id="copy-description-' + lang + '-' + item + '" href="#">copy to new description</a>)</li>';
-				$('#copy-description-' + lang + '-' + item).on('click', function (event) {
-					console.log($(event.target).attr('id'));
-					return false;
-				})
+				$('#copy-description-' + lang + '-' + item).click(function() {
+				  console.log($(event.target).attr('id'));
+				});
 			}
 			descriptionhtml += "</ul>";
 			var enableDescription = "";
