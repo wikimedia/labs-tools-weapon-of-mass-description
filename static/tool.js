@@ -46,7 +46,7 @@ function fillItems() {
 			for (var j = 0; j < data.items[0].descriptions.length; j++) {
 				var lang = data.items[0].descriptions[j].language;
 				var description = data.items[0].descriptions[j].value;
-				descriptionhtml += "<li>" + lang + ": " + description + ' (<a onclick="copyDescription(\'' + item + '\', \'' + lang + '\')" id="copy-description-' + lang + '-' + item + '" href="#">copy to new description</a>)</li>';
+				descriptionhtml += "<li>" + lang + ": <span id='description-" + item + "-" + lang + "'>" + description + '</span> (<a onclick="copyDescription(\'' + item + '\', \'' + lang + '\')" id="copy-description-' + lang + '-' + item + '" href="#">copy to new description</a>)</li>';
 			}
 			descriptionhtml += "</ul>";
 			var enableDescription = "";
