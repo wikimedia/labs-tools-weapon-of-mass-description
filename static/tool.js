@@ -50,7 +50,7 @@ function fillItems() {
 			for (var j = 0; j < data.items[0].descriptions.length; j++) {
 				var lang = data.items[0].descriptions[j].language;
 				var description = data.items[0].descriptions[j].value;
-				descriptionhtml += "<li>" + lang + ": " + description + ' (<a id="copy-description-' + lang + '-' + item + '">copy to new description</a>)</li>';
+				descriptionhtml += "<li>" + lang + ": " + description + ' (<a id="copy-description-' + lang + '-' + item + '" href="#">copy to new description</a>)</li>';
 				$('#copy-description-' + lang + '-' + item).bind('click', function (event) {
 					console.log($(event.target).attr('id'));
 					return false;
