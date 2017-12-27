@@ -42,6 +42,7 @@ function fillItems() {
 				labelhtml += "<li>" + lang + ": " + label + ' (<a id="copy-label-' + lang + '-' + item + '" href="#">copy to new label</a>)</li>';
 				$('#copy-label-' + lang + '-' + item).click(function() {
 				  console.log($(event.target).attr('id'));
+					console.log('label copied');
 				});
 			}
 			labelhtml += "</ul>";
@@ -52,6 +53,7 @@ function fillItems() {
 				descriptionhtml += "<li>" + lang + ": " + description + ' (<a id="copy-description-' + lang + '-' + item + '" href="#">copy to new description</a>)</li>';
 				$('#copy-description-' + lang + '-' + item).click(function() {
 				  console.log($(event.target).attr('id'));
+					console.log('description copied');
 				});
 			}
 			descriptionhtml += "</ul>";
