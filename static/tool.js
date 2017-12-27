@@ -39,14 +39,22 @@ function fillItems() {
 			for (var j = 0; j < data.items[0].labels.length; j++) {
 				var lang = data.items[0].labels[j].language;
 				var label = data.items[0].labels[j].value;
-				labelhtml += "<li>" + lang + ": " + label + ' (<a onclick="copyLabel(event, "' + item + '")" id="copy-label-' + lang + '-' + item + '" href="#">copy to new label</a>)</li>';
+				labelhtml += "<li>" + lang + ": " + label + ' (<a id="copy-label-' + lang + '-' + item + '" href="#">copy to new label</a>)</li>';
+				$('#copy-label-' + lang + '-' + item).bind('click', function (event) {
+					console.log($(event.target).attr('id'));
+					return false;
+				});
 			}
 			labelhtml += "</ul>";
 			var descriptionhtml = "<ul>"
 			for (var j = 0; j < data.items[0].descriptions.length; j++) {
 				var lang = data.items[0].descriptions[j].language;
 				var description = data.items[0].descriptions[j].value;
-				descriptionhtml += "<li>" + lang + ": " + description + ' (<a onclick="copyDescription(event, "' + item + '")" id="copy-description-' + lang + '-' + item + '">copy to new description</a>)</li>';
+				descriptionhtml += "<li>" + lang + ": " + description + ' (<a id="copy-description-' + lang + '-' + item + '">copy to new description</a>)</li>';
+				$('#copy-description-' + lang + '-' + item).bind('click', function (event) {
+					console.log($(event.target).attr('id'));
+					return false;
+				})
 			}
 			descriptionhtml += "</ul>";
 			var enableDescription = "";
