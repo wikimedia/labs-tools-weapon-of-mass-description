@@ -39,7 +39,7 @@ function fillItems() {
 			for (var j = 0; j < data.items[0].labels.length; j++) {
 				var lang = data.items[0].labels[j].language;
 				var label = data.items[0].labels[j].value;
-				labelhtml += "<li>" + lang + ": " + label + ' (<a onclick="copyLabel(\'' + item + '\', \'' + lang + '\')" id="copy-label-' + lang + '-' + item + '" href="#">copy to new label</a>)</li>';
+				labelhtml += "<li>" + lang + ": <span id='label-" + item + "-" + lang + "'>" + label + '</span> (<a onclick="copyLabel(\'' + item + '\', \'' + lang + '\')" id="copy-label-' + lang + '-' + item + '" href="#">copy to new label</a>)</li>';
 			}
 			labelhtml += "</ul>";
 			var descriptionhtml = "<ul>"
