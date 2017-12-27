@@ -99,6 +99,16 @@ function suggestItems() {
 	})
 }
 
+function copyLabel(event, qid) {
+	event.preventDefault();
+	console.log(qid);
+}
+
+function copyDescription(event, qid) {
+	event.preventDefault();
+	console.log(qid);
+}
+
 
 $( document ).ready(function() {
 	$.getJSON('https://tools.wmflabs.org/weapon-of-mass-description/api-langs', function (data) {
