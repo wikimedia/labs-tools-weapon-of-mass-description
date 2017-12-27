@@ -39,14 +39,14 @@ function fillItems() {
 			for (var j = 0; j < data.items[0].labels.length; j++) {
 				var lang = data.items[0].labels[j].language;
 				var label = data.items[0].labels[j].value;
-				labelhtml += "<li>" + lang + ": " + label + "</li>";
+				labelhtml += "<li>" + lang + ": " + label + ' (<a id="copy-label-' + lang + '-' + item + '" href="#">copy to new label</a>)</li>';
 			}
 			labelhtml += "</ul>";
 			var descriptionhtml = "<ul>"
 			for (var j = 0; j < data.items[0].descriptions.length; j++) {
 				var lang = data.items[0].descriptions[j].language;
 				var description = data.items[0].descriptions[j].value;
-				descriptionhtml += "<li>" + lang + ": " + description + "</li>";
+				descriptionhtml += "<li>" + lang + ": " + description + '(<a id="copy-description-' + lang + '-' + item + '">copy to new description</a>)</li>';
 			}
 			descriptionhtml += "</ul>";
 			var enableDescription = "";
