@@ -99,11 +99,11 @@ function suggestItems() {
 	})
 }
 
-function copyLabel(qid) {
+function copyLabel(qid, lang) {
 	console.log(qid);
 }
 
-function copyDescription(qid) {
+function copyDescription(qid, lang) {
 	console.log(qid);
 }
 
