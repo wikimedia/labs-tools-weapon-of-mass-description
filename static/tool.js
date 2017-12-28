@@ -1,5 +1,5 @@
 function sendForm() {
-	swal("Your data are being processed right now");
+	swal("Saved", "Your labels&desciptions should be now live on Wikidata.org", "success");
 	$('#send').disabled = true;
 	var items = $("input[name^='new_label_']");
 	var payload = [];
