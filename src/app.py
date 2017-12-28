@@ -343,7 +343,7 @@ def langs():
 		"format": "json",
 		"smtype": "language",
 		"smstate": "all",
-		"smlangprop": "code|name",
+		"smlangprop": "code|localname",
 		"smlimit": "max"
 	}
 	r = requests.get(app.config['API_MWURI'], params=params)
@@ -353,7 +353,7 @@ def langs():
 		if key != 'count':
 			langs.append({
 				'code': data['sitematrix'][key]['code'],
-				'name': data['sitematrix'][key]['name']
+				'name': data['sitematrix'][key]['localname']
 			})
 	res = {
 		'status': 'ok',
