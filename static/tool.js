@@ -96,7 +96,8 @@ function suggestItems() {
 			itemstr += items[i] + "\n";
 		}
 		$('#items').val(itemstr);
-	})
+	});
+	fillItems();
 }
 
 
