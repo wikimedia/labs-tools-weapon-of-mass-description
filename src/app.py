@@ -78,7 +78,7 @@ def index():
 def apiusername():
 	response = {
 		'status': 'ok',
-		'username'. getusername()
+		'username': getusername()
 	}
 	return jsonify(response)
 
