@@ -436,7 +436,10 @@ def apioverrideoptin():
 			sql = 'select overrideLabelsOptin from users where username="%s";' % flask.session.get('username')
 			cur.execute(sql)
 			data = cur.fetchall()
-			optined = data[0][0]
+			if len(data) == 0:
+				optined = 0
+			else:
+				optined = data[0][0]
 		if optined == 0:
 			optined = False
 		else:
