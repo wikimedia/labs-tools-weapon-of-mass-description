@@ -46,7 +46,7 @@ def wdconnect():
 
 def tconnect():
         return pymysql.connect(
-                database='s53612__weapon_of_mass_description_p',
+                database=app.config['DB_NAME'],
                 host='tools.db.svc.eqiad.wmflabs',
                 read_default_file=os.path.expanduser("~/replica.my.cnf"),
                 charset='utf8mb4',
