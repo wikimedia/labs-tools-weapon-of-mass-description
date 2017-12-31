@@ -73,6 +73,15 @@ def index():
 	else:
 		return render_template('login.html', logged=logged(), username=getusername())
 
+
+@app.route('/api-username')
+def apiusername():
+	response = {
+		'status': 'ok',
+		'username'. getusername()
+	}
+	return jsonify(response)
+
 @app.route('/report', methods=['get', 'post'])
 def report():
 	if request.method == 'POST':
