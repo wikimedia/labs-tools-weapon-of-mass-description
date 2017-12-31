@@ -107,6 +107,9 @@ function copyLabel(qid, lang) {
 }
 
 function copyDescription(qid, lang) {
+	var val = $('#description-' + qid + '-' + lang).text();
+	console.log(val);
+	$('input[name="new_description_' + qid + '"').val(val);
 	console.log(qid);
 }
 
