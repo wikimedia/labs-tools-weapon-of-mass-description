@@ -100,6 +100,9 @@ function suggestItems() {
 }
 
 function copyLabel(qid, lang) {
+	var val = $('#label-' + qid + '-' + lang).text();
+	console.log(val);
+	$('input[name="new_label_' + qid + '"').val(val);
 	console.log(qid);
 }
 
