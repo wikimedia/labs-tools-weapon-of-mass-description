@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+							<li><a href="https://phabricator.wikimedia.org/project/board/3165/">Bugs</a></li>
 #
 # This program is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the Free
@@ -73,7 +74,6 @@ def index():
 	else:
 		return render_template('login.html', logged=logged(), username=getusername())
 
-
 @app.route('/api-username')
 def apiusername():
 	response = {
@@ -81,32 +81,6 @@ def apiusername():
 		'username': getusername()
 	}
 	return jsonify(response)
-
-@app.route('/report', methods=['get', 'post'])
-def report():
-	if request.method == 'POST':
-		title = request.form.get('title')
-		body = request.form.get('body')
-		sender = 'tools.weapon-of-mass-description@tools.wmflabs.org'
-		recipient = "bugs@webappky.cz"
-		mail = "!projects #weapon_of_mass_description\n\n" + body + '\n\nNahlásil: ' + flask.session.get('username')
-		msg = MIMEText(mail)
-		msg['Subject'] = title
-		msg['From'] = sender
-		msg['To'] = recipient
-		s = smtplib.SMTP('mail.tools.wmflabs.org')
-		s.ehlo()
-		s.sendmail(sender, recipient, msg.as_string())
-		s.quit()
-		return flask.render_template('reported.html', logged=logged(), username=getusername())
-	username = flask.session.get('username')
-	if username is not None:
-		if blocked()['blockstatus']:
-			return flask.render_template('blocked.html', logged=logged(), username=getusername())
-		else:
-			return flask.render_template('report.html', logged=logged(), username=getusername())
-	else:
-		return flask.render_template('login.html', logged=logged(), username=getusername())
 
 @app.route('/users')
 def users():
