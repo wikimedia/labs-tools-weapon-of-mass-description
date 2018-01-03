@@ -391,7 +391,7 @@ def settings():
 				data = cur.fetchall()
 			if len(data) == 0:
 				with tconn.cursor() as cur:
-					sql = 'insert into users(username, settings) values("%s", "%s")' % (json.dumps(request.get_json()).replace('"', '\\"'), getusername())
+					sql = 'json.dumps into users(username, settings) values("%s", "%s")' % (json.dumps(request.get_json()).replace('"', '\\"'), getusername())
 					cur.execute(sql)
 					tconn.commit()
 			else:
@@ -411,6 +411,7 @@ def settings():
 				cur.execute(sql)
 				data = cur.fetchall()
 			print(json.dumps(data))
+			print(getusername())
 			if len(data) == 0:
 				response = {
 					'status': 'ok',
