@@ -1,5 +1,5 @@
 function sendForm() {
-	swal("Saved", "Your labels&desciptions should be now live on Wikidata.org", "success");
+    swal("Sending", "Your labels&desciptions are sending to Wikidata.org", "success");
 	$('#send').disabled = true;
 	var items = $("input[name^='new_label_']");
 	var payload = [];
@@ -21,7 +21,9 @@ function sendForm() {
 		$('#send')[0].disabled = false;
 		$('tbody').empty();
 		$('#items').val("");
-	})
+	}).done(function() {
+        swal("Saved", "Your labels&desciptions should be now live on Wikidata.org", "success");
+    })
 }
 
 function fillItems() {
@@ -39,14 +41,14 @@ function fillItems() {
 			for (var j = 0; j < data.items[0].labels.length; j++) {
 				var lang = data.items[0].labels[j].language;
 				var label = data.items[0].labels[j].value;
-				labelhtml += "<li>" + lang + ": <span id='label-" + item + "-" + lang + "'>" + label + '</span> (<a onclick="copyLabel(\'' + item + '\', \'' + lang + '\')" id="copy-label-' + lang + '-' + item + '" href="#">copy to new label</a>)</li>';
+				labelhtml += '<li>' + lang + ': <span class="label" id="label-' + item + '-' + lang + '">' + label + '</span> (<a class="copy-label" data-value="' + label + '" data-item="' + item + '" data-lang="' + lang + '" id="copy-label-' + lang + '-' + item + '" href="#">copy to new label</a>)</li>';
 			}
 			labelhtml += "</ul>";
 			var descriptionhtml = "<ul>"
 			for (var j = 0; j < data.items[0].descriptions.length; j++) {
 				var lang = data.items[0].descriptions[j].language;
 				var description = data.items[0].descriptions[j].value;
-				descriptionhtml += "<li>" + lang + ": <span id='description-" + item + "-" + lang + "'>" + description + '</span> (<a onclick="copyDescription(\'' + item + '\', \'' + lang + '\')" id="copy-description-' + lang + '-' + item + '" href="#">copy to new description</a>)</li>';
+				descriptionhtml += '<li>' + lang + ': <span class="description" id="description-' + item + '-' + lang + '">' + description + '</span> (<a class="copy-description" data-value="' + description+ '" data-item="' + item + '" data-lang="' + lang + '" id="copy-description-' + lang + '-' + item + '" href="#">copy to new description</a>)</li>';
 			}
 			descriptionhtml += "</ul>";
 			var enableDescription = "";
@@ -96,23 +98,46 @@ function suggestItems() {
 			itemstr += items[i] + "\n";
 		}
 		$('#items').val(itemstr);
-	});
-	fillItems();
+	}).done(function() {
+        fillItems();
+    })
+
 }
 
-function copyLabel(qid, lang) {
-	var val = $('#label-' + qid + '-' + lang).text();
-	console.log(val);
-	$('input[name="new_label_' + qid + '"').val(val);
-	console.log(qid);
-}
+//function copyLabel(qid, lang) {
+//	var val = $('#label-' + qid + '-' + lang).text();
+//	console.log(val);
+//	$('input[name="new_label_' + qid + '"').val(val);
+//	console.log(qid);
+//}
 
-function copyDescription(qid, lang) {
-	var val = $('#description-' + qid + '-' + lang).text();
-	console.log(val);
-	$('input[name="new_description_' + qid + '"').val(val);
-	console.log(qid);
-}
+
+
+$(function() {
+    $("body").on('click','.copy-label', function(event){
+        item = $(this).data('item');
+        lang = $(this).data('lang');
+        value = $(this).data('value');
+        $('input[name="new_label_' + item + '"').val(value);
+        event.preventDefault();
+    });
+
+    $("body").on('click','.copy-description', function(event){
+        item = $(this).data('item');
+        lang = $(this).data('lang');
+        value = $(this).data('value');
+        $('input[name="new_description_' + item + '"').val(value);
+        event.preventDefault();
+    });
+
+});
+
+//function copyDescription(qid, lang) {
+//	var val = $('#description-' + qid + '-' + lang).text();
+//	console.log(val);
+//	$('input[name="new_description_' + qid + '"').val(val);
+//	console.log(qid);
+//}
 
 
 $( document ).ready(function() {
