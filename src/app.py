@@ -484,7 +484,16 @@ def oauth_callback():
 		flask.session['request_token_secret'] = dict(zip(access_token._fields, access_token))['secret']
 		flask.session['request_token_key'] = dict(zip(access_token._fields, access_token))['key']
 		flask.session['username'] = identity['username']
-
+		tconn = tconnect()
+		with tconn.cursor() as cur:
+			sql = 'select settings from users where username="%s"' % getusername()
+			cur.execute(sql)
+			data = cur.fetchall()
+		if len(data) == 0:
+			with tconn.cursor() as cur:
+				sql = 'insert into users(username, settings) values ("%s", "%s")' % (getusername(), getdefaultsettings())
+				cur.execute(sql)
+				tconn.commit()
 	return flask.redirect(flask.url_for('index'))
 
 
