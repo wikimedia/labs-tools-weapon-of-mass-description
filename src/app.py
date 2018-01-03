@@ -78,7 +78,7 @@ def settingspage():
 	if logged():
 		return render_template('settings.html', logged=logged(), username=getusername())
 	else:
-		return render_template('login.html', logged=logged(), username=getusername())
+		return render_template('login.html', logged=logged(), username=getusername(), settings=getsettings())
 
 @app.route('/api-username')
 def apiusername():
