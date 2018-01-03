@@ -388,7 +388,9 @@ def apiblocked():
 	return jsonify(blocked())
 
 def getdefaultsettings():
-	return {}
+	return {
+		'suggestitems': 10
+	}
 
 def getsettings():
 	tconn = tconnect()
