@@ -381,6 +381,45 @@ def blocked():
 def apiblocked():
 	return jsonify(blocked())
 
+@app.route('/api-settings', methods=['GET', 'POST'])
+def settings():
+	if logged():
+		if request.method =='POST':
+			tconn = tconnect()
+			with tconn.cursor() as cur:
+				sql = 'select id from users where username="%s"' % getusername()
+				cur.execute(sql)
+				data = cur.fetchall()
+			if len(data) == 0:
+				with tconn.cursor() as cur:
+					sql = 'insert into users(username, settings) values("%s", "%s")' % (jsonify(request.get_json()), getusername())
+					cur.execute(sql)
+			else:
+				with tconn.cursor() as cur:
+					sql = 'update users set settings="%s" where username="%s"' % (jsonify(request.get_json()), getusername())
+					cur.execute(sql)
+			response = {
+				'status': 'ok',
+				'settings': request.get_json(),
+			}
+			return jsonify(response)
+		else:
+			tconn = tconnect()
+			with tconn.cursor() as cur:
+				sql = 'select settings from users where username="%s"' % getusername()
+				cur.execute(sql)
+				settings = cur.fetchall()[0][0]
+			response = {
+				'status': 'ok',
+				'settings': settings
+			}
+			return jsonify(response)
+	else:
+		response = {
+			'status': 'error',
+			'errorcode': 'mustlogin'
+		}
+		return make_response(response, 401)
 
 @app.route('/login')
 def login():
