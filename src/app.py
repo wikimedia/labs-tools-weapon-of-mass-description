@@ -402,8 +402,11 @@ def getsettings():
 		cur.execute(sql)
 		data = cur.fetchall()
 	if len(data) == 0:
+		print(0)
 		return getdefaultsettings()
 	else:
+		print(1)
+		print(json.loads(data[0][0]))
 		return json.loads(data[0][0])
 
 @app.route('/api-settings', methods=['GET', 'POST'])
