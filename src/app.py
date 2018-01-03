@@ -392,11 +392,11 @@ def settings():
 				data = cur.fetchall()
 			if len(data) == 0:
 				with tconn.cursor() as cur:
-					sql = 'insert into users(username, settings) values("%s", "%s")' % (jsonify(request.get_json()), getusername())
+					sql = 'insert into users(username, settings) values("%s", "%s")' % (flask.json.dumps(request.get_json()), getusername())
 					cur.execute(sql)
 			else:
 				with tconn.cursor() as cur:
-					sql = 'update users set settings="%s" where username="%s"' % (jsonify(request.get_json()), getusername())
+					sql = 'update users set settings="%s" where username="%s"' % (flask.json.dumps(request.get_json()), getusername())
 					cur.execute(sql)
 			response = {
 				'status': 'ok',
