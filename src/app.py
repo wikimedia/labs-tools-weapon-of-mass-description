@@ -380,6 +380,20 @@ def blocked():
 def apiblocked():
 	return jsonify(blocked())
 
+def getdefaultsettings():
+	return {}
+
+def getsettings():
+	tconn = tconnect()
+	with tconn.cursor() as cur:
+		sql = 'select settings from users where username="%s"' % getusername()
+		cur.execute(sql)
+		data = cur.fetchall()
+	if len(data) == 0:
+		return getdefaultsettings()
+	else:
+		return json.loads(data[0][0])
+
 @app.route('/api-settings', methods=['GET', 'POST'])
 def settings():
 	if logged():
@@ -405,24 +419,11 @@ def settings():
 			}
 			return jsonify(response)
 		else:
-			tconn = tconnect()
-			with tconn.cursor() as cur:
-				sql = 'select settings from users where username="%s"' % getusername()
-				cur.execute(sql)
-				data = cur.fetchall()
-			if len(data) == 0:
-				response = {
-					'status': 'ok',
-					'settings': {}
-				}
-				return jsonify(response)
-			else:
-				settings = json.loads(data[0][0])
-				response = {
-					'status': 'ok',
-					'settings': settings
-				}
-				return jsonify(response)
+			response = {
+				'status': 'ok',
+				'settings': getsettings()
+			}
+			return jsonify(response)
 	else:
 		response = {
 			'status': 'error',
