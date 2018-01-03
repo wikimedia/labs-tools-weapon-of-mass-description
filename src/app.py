@@ -407,12 +407,20 @@ def settings():
 			with tconn.cursor() as cur:
 				sql = 'select settings from users where username="%s"' % getusername()
 				cur.execute(sql)
-				settings = cur.fetchall()[0][0]
-			response = {
-				'status': 'ok',
-				'settings': settings
-			}
-			return jsonify(response)
+				data = cur.fetchall()
+			if len(data) == 0:
+				response = {
+					'status': 'ok',
+					'settings': {}
+				}
+				return jsonify(response)
+			else:
+				settings = data[0][0]
+				response = {
+					'status': 'ok',
+					'settings': settings
+				}
+				return jsonify(response)
 	else:
 		response = {
 			'status': 'error',
