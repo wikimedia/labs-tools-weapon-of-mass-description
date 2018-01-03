@@ -389,7 +389,10 @@ def apiblocked():
 
 def getdefaultsettings():
 	return {
-		'suggestitems': 10
+		'suggestitems': 10,
+		'openlinksinnewtab': False,
+		'optinoverride': False,
+		'atleastonelang': False
 	}
 
 def getsettings():
