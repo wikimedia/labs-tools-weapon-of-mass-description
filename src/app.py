@@ -391,7 +391,7 @@ def settings():
 				data = cur.fetchall()
 			if len(data) == 0:
 				with tconn.cursor() as cur:
-					sql = 'insert into users(username, settings) values("%s", "%s")' % (json.dumps(request.get_json()), getusername())
+					sql = 'insert into users(username, settings) values("%s", "%s")' % (json.dumps(request.get_json()).replace('"', '\\"'), getusername())
 					cur.execute(sql)
 			else:
 				with tconn.cursor() as cur:
