@@ -393,10 +393,12 @@ def settings():
 				with tconn.cursor() as cur:
 					sql = 'insert into users(username, settings) values("%s", "%s")' % (json.dumps(request.get_json()).replace('"', '\\"'), getusername())
 					cur.execute(sql)
+					tconn.commit()
 			else:
 				with tconn.cursor() as cur:
 					sql = 'update users set settings="%s" where username="%s"' % (json.dumps(request.get_json()), getusername())
 					cur.execute(sql)
+					tconn.commit()
 			response = {
 				'status': 'ok',
 				'settings': request.get_json(),
