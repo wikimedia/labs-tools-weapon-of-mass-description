@@ -417,7 +417,7 @@ def settings():
 				}
 				return jsonify(response)
 			else:
-				settings = data[0][0]
+				settings = json.loads(data[0][0])
 				response = {
 					'status': 'ok',
 					'settings': settings
