@@ -410,7 +410,7 @@ def settings():
 				sql = 'select settings from users where username="%s"' % getusername()
 				cur.execute(sql)
 				data = cur.fetchall()
-			print json.dumps(data)
+			print(json.dumps(data))
 			if len(data) == 0:
 				response = {
 					'status': 'ok',
