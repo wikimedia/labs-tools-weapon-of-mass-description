@@ -391,12 +391,12 @@ def settings():
 				data = cur.fetchall()
 			if len(data) == 0:
 				with tconn.cursor() as cur:
-					sql = 'json.dumps into users(username, settings) values("%s", "%s")' % (json.dumps(request.get_json()).replace('"', '\\"'), getusername())
+					sql = 'json.dumps into users(username, settings) values("%s", "%s")' % (getusername(), json.dumps(request.get_json()).replace('"', '\\"'))
 					cur.execute(sql)
 					tconn.commit()
 			else:
 				with tconn.cursor() as cur:
-					sql = 'update users set settings="%s" where username="%s"' % (json.dumps(request.get_json()), getusername())
+					sql = 'update users set settings="%s" where username="%s"' % (getusername(), json.dumps(request.get_json()).replace('"', '\\"'))
 					cur.execute(sql)
 					tconn.commit()
 			response = {
