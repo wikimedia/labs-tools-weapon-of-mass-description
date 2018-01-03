@@ -1,5 +1,5 @@
 function sendForm() {
-    swal("Sending", "Your labels&desciptions are sending to Wikidata.org", "success");
+    swal("Sending", "Your labels&desciptions are being send to Wikidata.org", "success");
 	$('#send').disabled = true;
 	var items = $("input[name^='new_label_']");
 	var payload = [];
