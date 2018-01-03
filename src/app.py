@@ -381,57 +381,6 @@ def blocked():
 def apiblocked():
 	return jsonify(blocked())
 
-@app.route('/api-override-optin', methods=['GET', 'POST'])
-def apioverrideoptin():
-	if not logged():
-		response = {
-			'status': 'error',
-			'errorcode': 'mustbelogged'
-		}
-		return make_response(jsonify(response), 403)
-	if request.method == 'POST':
-		tconn = tconnect()
-		insert = False
-		id = None
-		with tconn.cursor() as cur:
-			sql = 'select id from users where username="%s";' % flask.session.get('username')
-			cur.execute(sql)
-			data = cur.fetchall()
-			if len(data) == 0:
-				insert = True
-			else:
-				id = data[0][0]
-		with tconn.cursor() as cur:
-			if insert:
-				sql = 'insert into users(username, overrideLabelsOptin) values ("%s", 1);' % flask.session.get('username')
-				cur.execute(sql)
-			else:
-				sql = 'update users set overrideLabelsOptin=1 where id=%s;' % id
-				cur.execute(sql)
-		response = {
-			'status': 'ok',
-			'optin': True
-		}
-		return jsonify(response)
-	else:
-		tconn = tconnect()
-		with tconn.cursor() as cur:
-			sql = 'select overrideLabelsOptin from users where username="%s";' % flask.session.get('username')
-			cur.execute(sql)
-			data = cur.fetchall()
-			if len(data) == 0:
-				optined = 0
-			else:
-				optined = data[0][0]
-		if optined == 0:
-			optined = False
-		else:
-			optined = True
-		response = {
-			'status': 'ok',
-			'optin': optined
-		}
-		return jsonify(response)
 
 @app.route('/login')
 def login():
