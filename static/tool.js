@@ -1,5 +1,5 @@
 function sendForm() {
-    swal("Sending", "Your labels&desciptions are sending to Wikidata.org", "success");
+    swal("Sending", "Your labels&desciptions are being sent to Wikidata.org", "success");
 	$('#send').disabled = true;
 	var items = $("input[name^='new_label_']");
 	var payload = [];
@@ -118,7 +118,7 @@ $(function() {
         item = $(this).data('item');
         lang = $(this).data('lang');
         value = $(this).data('value');
-        $('input[name="new_label_' + item + '"').val(value);
+        $('input[name="new_label_' + item + '"]').val(value);
         event.preventDefault();
     });
 
@@ -126,7 +126,7 @@ $(function() {
         item = $(this).data('item');
         lang = $(this).data('lang');
         value = $(this).data('value');
-        $('input[name="new_description_' + item + '"').val(value);
+        $('input[name="new_description_' + item + '"]').val(value);
         event.preventDefault();
     });
 
