@@ -402,8 +402,8 @@ def getdefaultsettings(givejson=False):
 def getsettings():
 	tconn = tconnect()
 	with tconn.cursor() as cur:
-		sql = 'select settings from users where username=%s' % getusername()
-		cur.execute(sql)
+		sql = 'select settings from users where username=%s'
+		cur.execute(sql, (getusername(), ))
 		data = cur.fetchall()
 	if len(data) == 0:
 		with tconn.cursor() as cur:
