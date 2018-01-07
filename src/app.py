@@ -425,7 +425,7 @@ def settings():
 					tconn.commit()
 			else:
 				with tconn.cursor() as cur:
-					sql = 'update users set settings="%s" where username="%s"
+					sql = 'update users set settings="%s" where username="%s"'
 					cur.execute(sql, json.dumps(request.get_json(), getusername()))
 					tconn.commit()
 			response = {
