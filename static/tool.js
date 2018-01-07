@@ -48,7 +48,7 @@ function fillItems() {
 			for (var j = 0; j < data.items[0].descriptions.length; j++) {
 				var lang = data.items[0].descriptions[j].language;
 				var description = data.items[0].descriptions[j].value;
-				descriptionhtml += '<li>' + lang + ': <span class="description" id="description-' + item + '-' + lang + '">' + description + '</span> (<a class="copy-description" data-value="' + description+ '" data-item="' + item + '" data-lang="' + lang + '" id="copy-description-' + lang + '-' + item + '" href="#">copy to new description</a>)</li>';
+				descriptionhtml += '<li>' + lang + ': <span class="description" id="description-' + item + '-' + lang + '">' + description + '</span></li>';
 			}
 			descriptionhtml += "</ul>";
 			var enableDescription = "";
@@ -112,14 +112,6 @@ $(function() {
         lang = $(this).data('lang');
         value = $(this).data('value');
         $('input[name="new_label_' + item + '"]').val(value);
-        event.preventDefault();
-    });
-
-    $("body").on('click','.copy-description', function(event){
-        item = $(this).data('item');
-        lang = $(this).data('lang');
-        value = $(this).data('value');
-        $('input[name="new_description_' + item + '"]').val(value);
         event.preventDefault();
     });
 
