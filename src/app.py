@@ -409,6 +409,7 @@ def getsettings():
 		with tconn.cursor() as cur:
 			sql = 'insert into users(username, settings) values (%s, %s)'
 			cur.execute(sql, (getusername(), getdefaultsettings(True)))
+			tconn.commit()
 		return getdefaultsettings()
 	else:
 		return json.loads(data[0][0])
