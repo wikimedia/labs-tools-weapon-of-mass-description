@@ -69,7 +69,7 @@ def after_request(response):
 def index():
 	username = flask.session.get('username')
 	if username is not None:
-		return render_template('tool.html', logged=logged(),username=getusername())
+		return render_template('tool.html', logged=logged(),username=getusername(), settings=getsettings())
 	else:
 		return render_template('login.html', logged=logged(), username=getusername())
 
