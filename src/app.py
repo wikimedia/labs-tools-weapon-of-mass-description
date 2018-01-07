@@ -387,13 +387,17 @@ def blocked():
 def apiblocked():
 	return jsonify(blocked())
 
-def getdefaultsettings():
-	return {
+def getdefaultsettings(givejson=False):
+	sett = {
 		'suggestitems': 10,
 		'openlinksinnewtab': False,
 		'optinoverride': False,
 		'atleastonelang': False
 	}
+	if givejson:
+		return json.dumps(sett)
+	else:
+		return sett
 
 def getsettings():
 	tconn = tconnect()
@@ -404,7 +408,7 @@ def getsettings():
 	if len(data) == 0:
 		with tconn.cursor() as cur:
 			sql = 'insert into users(username, settings) values ("%s", "%s")'
-			cur.execute(sql, (getusername(), getdefaultsettings()))
+			cur.execute(sql, (getusername(), getdefaultsettings(True)))
 		return getdefaultsettings()
 	else:
 		print(1)
@@ -497,7 +501,7 @@ def oauth_callback():
 		if len(data) == 0:
 			with tconn.cursor() as cur:
 				sql = 'insert into users(username, settings) values ("%s", "%s")'
-				cur.execute(sql, (getusername(), getdefaultsettings()))
+				cur.execute(sql, (getusername(), getdefaultsettings(True)))
 				tconn.commit()
 	return flask.redirect(flask.url_for('index'))
 
