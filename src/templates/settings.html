@@ -17,7 +17,9 @@
 		<label for="optinoverride">Do you want to allow the tool to override existing labels&amp;descriptions?</label>
 		<input type="checkbox" name="optinoverride" {% if settings.optinoverride %}checked {% endif %} value="1">
 
-	-->
+		-->
+
+		<button class="btn wafes-effect wafes-light" id="send" onclick="sendSettings()">Save settings</button>
 	</form>
 </div>
 {% endblock %}
