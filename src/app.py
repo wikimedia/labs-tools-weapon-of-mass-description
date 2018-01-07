@@ -402,7 +402,9 @@ def getsettings():
 		cur.execute(sql)
 		data = cur.fetchall()
 	if len(data) == 0:
-		print(0)
+		with tconn.cursor() as cur:
+			sql = 'insert into users(username, settings) values ("%s", "%s")'
+			cur.execute(sql, (getusername(), getdefaultsettings()))
 		return getdefaultsettings()
 	else:
 		print(1)
