@@ -76,9 +76,9 @@ def index():
 @app.route('/settings')
 def settingspage():
 	if logged():
-		return render_template('settings.html', logged=logged(), username=getusername())
+		return render_template('settings.html', logged=logged(), username=getusername(), settings=getsettings())
 	else:
-		return render_template('login.html', logged=logged(), username=getusername(), settings=getsettings())
+		return render_template('login.html', logged=logged(), username=getusername())
 
 @app.route('/api-username')
 def apiusername():
