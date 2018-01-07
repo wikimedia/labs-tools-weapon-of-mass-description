@@ -402,12 +402,12 @@ def getdefaultsettings(givejson=False):
 def getsettings():
 	tconn = tconnect()
 	with tconn.cursor() as cur:
-		sql = 'select settings from users where username="%s"' % getusername()
+		sql = 'select settings from users where username=%s' % getusername()
 		cur.execute(sql)
 		data = cur.fetchall()
 	if len(data) == 0:
 		with tconn.cursor() as cur:
-			sql = 'insert into users(username, settings) values ("%s", "%s")'
+			sql = 'insert into users(username, settings) values (%s, %s)'
 			cur.execute(sql, (getusername(), getdefaultsettings(True)))
 		return getdefaultsettings()
 	else:
@@ -421,18 +421,18 @@ def settings():
 		if request.method =='POST':
 			tconn = tconnect()
 			with tconn.cursor() as cur:
-				sql = 'select id from users where username="%s"'
+				sql = 'select id from users where username=%s'
 				cur.execute(sql, (getusername(), ))
 				data = cur.fetchall()
 			if len(data) == 0:
 				with tconn.cursor() as cur:
-					sql = 'insert into users(username, settings) values ("%s", "%s")'
+					sql = 'insert into users(username, settings) values (%s, %s)'
 					cur.execute(sql, (getusername(), json.dumps(request.get_json())))
 					tconn.commit()
 			else:
 				with tconn.cursor() as cur:
-					sql = 'update users set settings="%s" where username="%s"'
-					cur.execute(sql, json.dumps(request.get_json(), getusername()))
+					sql = 'update users set settings=%s where username=%s'
+					cur.execute(sql, (json.dumps(request.get_json()), getusername()))
 					tconn.commit()
 			response = {
 				'status': 'ok',
@@ -495,12 +495,12 @@ def oauth_callback():
 		flask.session['username'] = identity['username']
 		tconn = tconnect()
 		with tconn.cursor() as cur:
-			sql = 'select settings from users where username="%s"'
+			sql = 'select settings from users where username=%s'
 			cur.execute(sql, (getusername(), ))
 			data = cur.fetchall()
 		if len(data) == 0:
 			with tconn.cursor() as cur:
-				sql = 'insert into users(username, settings) values ("%s", "%s")'
+				sql = 'insert into users(username, settings) values (%s, %s)'
 				cur.execute(sql, (getusername(), getdefaultsettings(True)))
 				tconn.commit()
 	return flask.redirect(flask.url_for('index'))
