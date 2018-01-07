@@ -104,13 +104,6 @@ function suggestItems() {
 
 }
 
-//function copyLabel(qid, lang) {
-//	var val = $('#label-' + qid + '-' + lang).text();
-//	console.log(val);
-//	$('input[name="new_label_' + qid + '"').val(val);
-//	console.log(qid);
-//}
-
 
 
 $(function() {
@@ -131,13 +124,6 @@ $(function() {
     });
 
 });
-
-//function copyDescription(qid, lang) {
-//	var val = $('#description-' + qid + '-' + lang).text();
-//	console.log(val);
-//	$('input[name="new_description_' + qid + '"').val(val);
-//	console.log(qid);
-//}
 
 
 $( document ).ready(function() {
