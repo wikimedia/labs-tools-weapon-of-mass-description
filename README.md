@@ -1,2 +1,4 @@
 # weapon-of-mass-description
-This repository was moved to https://phabricator.wikimedia.org/source/tool-weapon-of-mass-description/. This repository won't be updated.
+Weapon of Mass Description
+
+Please report all bugs at Wikimedia Phabricator (https://phabricator.wikimedia.org/project/view/3165/). Thanks!
