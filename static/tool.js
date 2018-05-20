@@ -80,7 +80,7 @@ function fillItems() {
 			var url = "https://tools.wmflabs.org/autodesc?q=" + item + "&lang=" + $('#langs').val() + "&mode=short&links=text&redlinks=&format=json&get_infobox=yes&infobox_template=";
 			$.getJSON(url, function (data) {
 				var id = "autodesc-" + data.q;
-				$('#' + id).text(data.result);
+				$('#' + id).text(data.result + ' (<a href="#" class="copy-autodesc" data-value="' + data.result + '" data-item="' + data.q + '">copy to new description</a>)');
 			})
 		});
 		$('#send')[0].disabled = false;
@@ -116,6 +116,13 @@ $(function() {
     });
 });
 
+$(function() {
+  $("body").on('click', '.copy-label', function (event) {
+    item = $(this).data('item');
+    value = $(this).data('value');
+    $('input[name="new_description_' + item + '"]').val(value);
+  })
+});
 
 $( document ).ready(function() {
 	$.getJSON('https://tools.wmflabs.org/weapon-of-mass-description/api-langs', function (data) {
