@@ -121,6 +121,7 @@ $(function() {
     item = $(this).data('item');
     value = $(this).data('value');
     $('input[name="new_description_' + item + '"]').val(value);
+    event.preventDefault();
   })
 });
 
