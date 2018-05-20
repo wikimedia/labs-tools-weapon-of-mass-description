@@ -120,7 +120,9 @@ $(function() {
   $("body").on('click', '.copy-autodesc', function (event) {
     item = $(this).data('item');
     value = $(this).data('value');
-    $('input[name="new_description_' + item + '"]').val(value);
+    if ($('input[name="new_description_' + item + '"]')[0].disabled == false) {
+      $('input[name="new_description_' + item + '"]').val(value);
+    }
     event.preventDefault();
   })
 });
