@@ -117,7 +117,7 @@ $(function() {
 });
 
 $(function() {
-  $("body").on('click', '.copy-label', function (event) {
+  $("body").on('click', '.copy-autodesc', function (event) {
     item = $(this).data('item');
     value = $(this).data('value');
     $('input[name="new_description_' + item + '"]').val(value);
