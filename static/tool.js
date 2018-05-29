@@ -16,7 +16,7 @@ function sendForm() {
 		payload.push(imagepayload);
 		console.log(qid);
 	}
-	$.postJSON('https://tools.wmflabs.org/weapon-of-mass-description/api-edit', payload, function (data) {
+	$.postJSON('api-edit', payload, function (data) {
 		console.log(data);
 		$('#send')[0].disabled = false;
 		$('tbody').empty();
@@ -31,7 +31,7 @@ function fillItems() {
 	var items = $('#items').val().split('\n');
 	for (var i = 0; i < items.length; i++) {
 		var item = items[i];
-		var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-item?item=' + item + '&lang=' + $('#langs').val();
+		var url = 'api-item?item=' + item + '&lang=' + $('#langs').val();
 		if ($('#spokablelangs').val() != "") {
 			url += "&langs=" + $('#spokablelangs').val().replaceAll('\n', '|');
 		}
@@ -89,7 +89,7 @@ function fillItems() {
 
 function suggestItems() {
 	var wiki = $('#langs').val() + 'wiki';
-	var url = 'https://tools.wmflabs.org/weapon-of-mass-description/api-suggestitems?wiki=' + wiki + '&num=' + $('#loaditems').val();
+	var url = 'api-suggestitems?wiki=' + wiki + '&num=' + $('#loaditems').val();
 	$.getJSON(url, function (data) {
 		var items = data.items;
 		$('#items').val("");
@@ -128,7 +128,7 @@ $(function() {
 });
 
 $( document ).ready(function() {
-	$.getJSON('https://tools.wmflabs.org/weapon-of-mass-description/api-langs', function (data) {
+	$.getJSON('api-langs', function (data) {
 		for (var i = 0; i < data['langs'].length; i++) {
 			if (data['langs'][i]['code'] == 'cs') {
 				var row = '<option value="' + data['langs'][i]['code'] + '" selected>' + data['langs'][i]['name'] + '</option>';
