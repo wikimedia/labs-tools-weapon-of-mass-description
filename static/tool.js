@@ -59,9 +59,12 @@ function fillItems() {
 			if (data.items[0].enableLabel == false) {
 				enableLabel = "disabled";
 			}
+			var settings = JSON.parse($('#settings').text());
+			var linkToAdd = "";
+			if(settings.openlinksinnewtab) linkToAdd = 'target="_blank" ';
 			var html = `
 			<tr>
-					<td><a href="https://wikidata.org/entity/` + item + `">` + item + `</a></td>
+					<td><a ` + linkToAdd + `href="https://wikidata.org/entity/` + item + `">` + item + `</a></td>
 					<td>
 							<div class="input-field">
 									<input ` + enableLabel + ` placeholder="new label" name="new_label_` + item + `" type="text">
@@ -81,7 +84,7 @@ function fillItems() {
 			$.getJSON(url, function (data) {
 				var id = "autodesc-" + data.q;
 				$('#' + id).html(data.result + ' (<a href="#" class="copy-autodesc" data-value="' + data.result + '" data-item="' + data.q + '">copy to new description</a>)');
-			})
+			});
 		});
 		$('#send')[0].disabled = false;
 	}
