@@ -26,7 +26,7 @@ import random
 import toolforge
 from flask_jsonlocale import Locales
 
-app = flask.Flask(__name__)
+app = flask.Flask(__name__, static_folder='../static')
 application = app
 
 locales = Locales(app)
