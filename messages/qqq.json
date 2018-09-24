@@ -1,4 +1,10 @@
 {
+    "@metadata": {
+      "authors": [
+        "Martin Urbanec"
+      ]
+    },
+
     "users": "Part of menu",
     "settings": "Part of menu",
     "login": "Part of menu",
