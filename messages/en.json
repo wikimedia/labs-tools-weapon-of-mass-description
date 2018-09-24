@@ -1,0 +1,15 @@
+{
+    "users": "Users",
+    "settings": "Settings",
+    "login": "Login",
+    "logout": "Logout",
+    "source": "Source",
+    "please-login": "Please, <a href=\"login\">login</a>",
+    "description": "<strong>Weapon of Mass Description</strong> is a tool that allows you to fill descriptions and/or labels to Wikidata en masse. See more at <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata page</a> about this tool.",
+    "how-many-items": "How many items should be suggested by default?",
+    "save-settings": "Save settings",
+    "all-users": "All users that ever used WMD",
+    "username": "Username",
+    "total-edits": "Total number of edits",
+    "total": "Total"
+}

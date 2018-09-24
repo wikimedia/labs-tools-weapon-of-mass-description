@@ -24,9 +24,12 @@ import mwoauth
 from requests_oauthlib import OAuth1
 import random
 import toolforge
+from flask_jsonlocale import Locales
 
 app = flask.Flask(__name__)
 application = app
+
+locales = Locales(app)
 
 ua = "Weapon of Mass Description (https://tools.wmflabs.org/weapon-of-mass-description; martin.urbanec@wikimedia.cz"
 requests.utils.default_user_agent = lambda: ua

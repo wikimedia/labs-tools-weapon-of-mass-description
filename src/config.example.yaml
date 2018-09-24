@@ -6,3 +6,4 @@ OAUTH_MWURI: https://www.wikidata.org/w/index.php
 API_MWURI: https://www.wikidata.org/w/api.php
 APPLICATION_ROOT: /
 DB_NAME: s53612__weapon_of_mass_description
+MESSAGES_DIR: ../messages

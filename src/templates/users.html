@@ -2,12 +2,12 @@
 
 {% block body %}
 <div class="container">
-	<h1>All users that ever used WMD</h1>
+	<h1>{{locale['all-users']}}</h1>
   <table>
     <thead>
       <tr>
-        <th>Username</th>
-        <th>Total number of edits</th>
+        <th>{{locale['username']}}</th>
+        <th>{{locale['total-edits']}}</th>
       </tr>
     </thead>
     <tbody>
@@ -21,7 +21,7 @@
     </tbody>
 		<tfoot>
 			<tr>
-				<td>Total</td>
+				<td>{{locale['total']}}</td>
 				<td>{{total}}</td>
 			</tr>
 		</tfoot>

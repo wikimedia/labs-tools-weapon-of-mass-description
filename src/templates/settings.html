@@ -6,7 +6,7 @@
 <div class="container">
 	<h1>Your settings</h1>
 	<form id="settings">
-		<label for="suggestitems">How many items should be suggested by default?</label>
+		<label for="suggestitems">{{locale['how-many-items']}}</label>
 		<input type="number" name="suggestitems" value="{{ settings.suggestitems }}">
 
 		<!--
@@ -18,7 +18,7 @@
 		<input type="checkbox" name="optinoverride" {% if settings.optinoverride %}checked {% endif %} value="1">
 
 		-->
-		<button type="button" class="btn wafes-effect wafes-light" id="send" onclick="sendSettings()">Save settings</button>
+		<button type="button" class="btn wafes-effect wafes-light" id="send" onclick="sendSettings()">{{locale['save-settings']}}</button>
 	</form>
 </div>
 {% endblock %}
