@@ -19,15 +19,11 @@ import pymysql
 import yaml
 import simplejson as json
 import requests
-from urllib.parse import quote
-from flask import redirect, request, jsonify, make_response, render_template
+from flask import request, jsonify, make_response, render_template
 import mwoauth
-import mwparserfromhell
 from requests_oauthlib import OAuth1
 import random
 import toolforge
-import smtplib
-from email.mime.text import MIMEText
 
 app = flask.Flask(__name__)
 application = app
@@ -53,7 +49,7 @@ def tconnect():
         )
 
 def logged():
-	return flask.session.get('username') != None
+	return flask.session.get('username') is not None
 
 def getusername():
 	return flask.session.get('username')
@@ -115,7 +111,7 @@ def users():
 def suggestitems():
 	wiki = request.args.get('wiki')
 	num = request.args.get('num')
-	if wiki == None or num == None:
+	if wiki is None or num is None:
 		response = {
 			'status': 'error',
 			'errorcode': 'mustpassparams'
@@ -141,7 +137,7 @@ def suggestitems():
 		for row in data:
 			items.append(row[0])
 	nums = []
-	if num != None:
+	if num is not None:
 		for i in range(0, num):
 			while True:
 				r = random.randint(0, len(items)-1)
@@ -355,7 +351,7 @@ def apilangs():
 
 def blocked():
 	username = flask.session.get('username')
-	if username == None:
+	if username is None:
 		response = {
 			'status': 'error',
 			'errorcode': 'anonymoususe'
