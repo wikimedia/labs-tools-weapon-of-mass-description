@@ -25,7 +25,7 @@ from requests_oauthlib import OAuth1
 import random
 import toolforge
 
-app = flask.Flask(__name__)
+app = flask.Flask(__name__, static_folder='../static')
 application = app
 
 ua = "Weapon of Mass Description (https://tools.wmflabs.org/weapon-of-mass-description; martin.urbanec@wikimedia.cz"
