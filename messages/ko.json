@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Revi",
+			"Ykhwong"
+		]
+	},
+	"users": "사용자",
+	"settings": "설정",
+	"login": "로그인",
+	"logout": "로그아웃",
+	"source": "출처",
+	"please-login": "<a href=\"login\">로그인</a>해 주십시오",
+	"how-many-items": "기본적으로 한번에 몇개의 항목을 추천할까요?",
+	"save-settings": "설정 저장",
+	"all-users": "WMD를 사용한 적이 있는 모든 문서",
+	"username": "사용자 이름",
+	"total-edits": "총 편집 수",
+	"total": "합계"
+}

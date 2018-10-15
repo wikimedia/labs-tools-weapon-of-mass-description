@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"users": "Χρήστες",
+	"settings": "Ρυθμίσεις",
+	"login": "Είσοδος",
+	"logout": "Έξοδος",
+	"source": "Πηγή",
+	"please-login": "Παρακαλώ, <a href=\"login\">συνδεθείτε</a>",
+	"description": "Το <strong>Weapon of Mass Description</strong> είναι εργαλείο που σας επιτρέπει να συμπληρώσετε περιγραφές και/ή ετικέτες στο Wikidata μαζικά. Δείτε περισσότερα στη <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">σελίδα στο Wikidata</a> για αυτό το εργαλείο.",
+	"how-many-items": "Πόσα αντικείμενα θα πρέπει να προταθούν από προεπιλογή;",
+	"save-settings": "Αποθήκευση ρυθμίσεων",
+	"all-users": "Όλοι οι χρήστες που έχουν χρησιμοποιήσει το WMD",
+	"username": "Όνομα χρήστη",
+	"total-edits": "Συνολικός αριθμός επεξεργασιών",
+	"total": "Συνολικά"
+}

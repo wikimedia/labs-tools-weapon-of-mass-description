@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"users": "Корисници",
+	"settings": "Нагодувања",
+	"login": "Најава",
+	"logout": "Одјава",
+	"source": "Извор",
+	"please-login": "<a href=\"login\">Најавете се</a>",
+	"description": "<strong>Масовен опис на Википодатоците</strong> е алатка која ви овмозжува масовно внесување на описи и/или натписи во Википодатоците. Повеќе ќе дознаете на <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">страницата на алаткава</a>.",
+	"how-many-items": "Колку предмети да се предлагаат по посновно?",
+	"save-settings": "Зачувај поставки",
+	"all-users": "Сите корисници кои некогаш ја употребиле алаткава",
+	"username": "Корисничко име",
+	"total-edits": "Вкупно уредувања",
+	"total": "Вкупно"
+}

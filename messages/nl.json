@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"users": "Gebruikers",
+	"settings": "Instellingen",
+	"login": "Aanmelden",
+	"logout": "Afmelden",
+	"source": "Bron",
+	"save-settings": "Instellingen opslaan",
+	"all-users": "Alle gebruikers die ooit WMD hebben gebruikt",
+	"username": "Gebruikersnaam",
+	"total-edits": "Totaal aantal bewerkingen",
+	"total": "Totaal"
+}

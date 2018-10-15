@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"users": "Användare",
+	"settings": "Inställningar",
+	"login": "Logga in",
+	"logout": "Logga ut",
+	"source": "Källa",
+	"please-login": "Var god <a href=\"login\">logga in</a>",
+	"description": "<strong>Weapon of Mass Description</strong> är ett verktyg som låter dig fylla i beskrivningar och/eller etiketter på Wikidata i större mängder. Se mer på <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata-sidan</a> om detta verktyg.",
+	"how-many-items": "Hur många objekt bör föreslås som standard?",
+	"save-settings": "Spara inställningar",
+	"all-users": "Alla användare som någonsin har använt WMD",
+	"username": "Användarnamn",
+	"total-edits": "Totalt antal redigeringar",
+	"total": "Totalt"
+}

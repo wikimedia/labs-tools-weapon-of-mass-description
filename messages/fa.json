@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amirsara"
+		]
+	},
+	"users": "کاربران",
+	"settings": "تنظیمات",
+	"login": "ورود",
+	"logout": "خروج",
+	"source": "منبع",
+	"please-login": "لطفاً، <a href=\"login\">واردشوید</a>",
+	"save-settings": "ذخیرهٔ تنظیمات",
+	"username": "نام کاربری",
+	"total-edits": "شمار کلی ویرایش‌ها",
+	"total": "مجموع"
+}

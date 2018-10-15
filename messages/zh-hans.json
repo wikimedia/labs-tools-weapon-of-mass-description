@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"A Chinese Wikipedian"
+		]
+	},
+	"users": "用户",
+	"settings": "设置",
+	"login": "登录",
+	"logout": "注销",
+	"source": "来源",
+	"how-many-items": "默认情况下应该建议多少项目？",
+	"save-settings": "提交设置",
+	"all-users": "所有使用过WMD的用户",
+	"username": "用户名",
+	"total-edits": "总编辑数",
+	"total": "总共"
+}

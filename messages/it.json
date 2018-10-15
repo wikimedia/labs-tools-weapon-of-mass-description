@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"users": "Utenti",
+	"settings": "Impostazioni",
+	"login": "Accedi",
+	"logout": "Esci",
+	"save-settings": "Salva impostazioni",
+	"username": "Nome utente",
+	"total-edits": "Numero totale di modifiche",
+	"total": "Totale"
+}

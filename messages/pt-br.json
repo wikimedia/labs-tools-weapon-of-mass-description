@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"users": "Usuários",
+	"settings": "Configurações",
+	"login": "Entrar",
+	"logout": "Sair",
+	"source": "Fonte",
+	"please-login": "Por favor, <a href=\"login\">entre</a>",
+	"how-many-items": "Quantos itens devem ser sugeridos por padrão?",
+	"save-settings": "Salvar configurações",
+	"all-users": "Todos os usuários que já usaram WMD",
+	"username": "Nome de usuário",
+	"total-edits": "Número total de edições",
+	"total": "Total"
+}

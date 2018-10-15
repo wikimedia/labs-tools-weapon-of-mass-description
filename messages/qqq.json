@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-      "authors": [
-        "Martin Urbanec"
-      ]
-    },
-
-    "users": "Part of menu",
-    "settings": "Part of menu",
-    "login": "Part of menu",
-    "logout": "Part of menu",
-    "source": "Part of menu",
-    "please-login": "Included on main page when you're not logged in",
-    "description": "Tool's description,included on main page when you're not logged in",
-    "how-many-items": "Part of settings page",
-    "save-settings": "Part of settings page",
-    "all-users": "Headline of users page",
-    "username": "Part of users page",
-    "total-edits": "Page of users page",
-    "total": "Part of users page"
+	"@metadata": {
+		"authors": [
+			"Martin Urbanec",
+			"Robby"
+		]
+	},
+	"users": "Part of menu\n{{Identical|User}}",
+	"settings": "Part of menu\n{{Identical|Settings}}",
+	"login": "Part of menu",
+	"logout": "Part of menu",
+	"source": "Part of menu\n{{Identical|Source}}",
+	"please-login": "Included on main page when you're not logged in",
+	"description": "Tool's description,included on main page when you're not logged in",
+	"how-many-items": "Part of settings page",
+	"save-settings": "Part of settings page",
+	"all-users": "Headline of users page",
+	"username": "Part of users page\n{{Identical|Username}}",
+	"total-edits": "Page of users page",
+	"total": "Part of users page\n{{Identical|Total}}"
 }

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"users": "Benutzer",
+	"settings": "Einstellungen",
+	"login": "Anmelden",
+	"logout": "Abmelden",
+	"source": "Quelle",
+	"please-login": "Bitte <a href=\"login\">melde dich an</a>",
+	"description": "<strong>Weapon of Mass Description</strong> ist ein Werkzeug, das es dir ermöglicht, Wikidata-Beschreibungen und/oder Bezeichnungen massenhaft auszufüllen. Weitere Informationen zu diesem Werkzeug auf <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">dieser Wikidata-Seite</a>.",
+	"how-many-items": "Wie viele Elemente sollten standardmäßig vorgeschlagen werden?",
+	"save-settings": "Einstellungen speichern",
+	"all-users": "Alle Benutzer, die jemals WMD benutzt haben",
+	"username": "Benutzername",
+	"total-edits": "Gesamtzahl der Bearbeitungen",
+	"total": "Gesamt"
+}

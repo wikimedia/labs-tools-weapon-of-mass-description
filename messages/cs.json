@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Martin Urbanec"
+		]
+	},
+	"settings": "Nastavení",
+	"login": "Přihlásit se",
+	"logout": "Odhlásit se",
+	"source": "Zdroj",
+	"please-login": "Prosím, <a href=\"login\">přihlašte se</a>",
+	"save-settings": "Uložit nastavení",
+	"all-users": "Všichni uživatelé, kteří někdy použili WMD",
+	"username": "Uživatelské jméno"
+}
