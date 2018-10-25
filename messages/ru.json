@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras"
+		]
+	},
+	"users": "Участники",
+	"settings": "Настройки",
+	"login": "Войти",
+	"logout": "Выйти",
+	"source": "Источник",
+	"please-login": "Пожалуйста, <a href=\"login\">войдите</a>",
+	"description": "<strong>Weapon of Mass Description</strong> (Оружие массового описания) — это инструмент, который позволяет массово заполнять описания и/или метки в Викиданных. Подробнее об этом инструменте см. на странице в <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Викиданных</a>.",
+	"how-many-items": "Сколько элементов следует предлагать по умолчанию?",
+	"save-settings": "Сохранить настройки",
+	"all-users": "Все участники, когда либо использовавшие WMD",
+	"username": "Имя участника",
+	"total-edits": "Общее число правок",
+	"total": "Всего"
+}

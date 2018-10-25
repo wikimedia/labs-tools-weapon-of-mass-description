@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"users": "Utinde",
+	"settings": "'Mbostaziune",
+	"login": "Tràse",
+	"logout": "Isse",
+	"source": "Sorgende",
+	"please-login": "Pe piacere, <a href=\"login\">tràse</a>",
+	"description": "<strong>Weapon of Mass Description</strong> jè 'nu strumende ca permette de anghiè le descrizione e/o etichette de Uicchidate tutte 'nzieme. 'Ndruche pure 'a <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">pàgene de Uicchidate</a> sus a stu strumende.",
+	"how-many-items": "Quanda vote avessa essere suggerite?",
+	"save-settings": "Reggistre le 'mbostaziune",
+	"all-users": "Tutte le utinde ca non g'onne maje ausate WMD",
+	"username": "Nome de l'utende",
+	"total-edits": "Numere totale de cangiaminde",
+	"total": "Totale"
+}

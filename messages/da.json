@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"users": "Brugere",
+	"settings": "Indstillinger",
+	"login": "Log på",
+	"logout": "Log af",
+	"source": "Kilde",
+	"save-settings": "Gem indstillinger",
+	"username": "Brugernavne"
+}

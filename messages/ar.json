@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"users": "المستخدمون",
+	"settings": "إعدادات",
+	"login": "تسجيل الدخول",
+	"logout": "خروج",
+	"source": "المصدر",
+	"please-login": "الرجاء <a href=\"login\"> تسجيل الدخول</a>",
+	"description": "<strong>سلاح الوصف الشامل</strong> هي أداة تسمح لك بتعبئة أوصاف و/أو تسميات إلى ويكي بيانات بشكل جماعي، راجع المزيد على <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">صفحة ويكي بيانات</a> حول هذه الأداة.",
+	"how-many-items": "كم عدد العناصر التي يجب اقتراحها بشكل افتراضي؟",
+	"save-settings": "حفظ التغييرات",
+	"all-users": "جميع المستخدمين الذين استخدموا سوش",
+	"username": "اسم المستخدم",
+	"total-edits": "إجمالي عدد التعديلات",
+	"total": "الإجمالي"
+}

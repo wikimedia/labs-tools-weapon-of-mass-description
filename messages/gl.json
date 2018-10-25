@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Banjo"
+		]
+	},
+	"users": "Usuarios",
+	"settings": "Axustes",
+	"login": "Acceder",
+	"logout": "Saír",
+	"source": "Fonte",
+	"save-settings": "Gardar os axustes",
+	"username": "Nome de usuario",
+	"total-edits": "Número total de edicións",
+	"total": "Total"
+}
