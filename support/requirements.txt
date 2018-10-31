@@ -5,7 +5,7 @@ chardet==3.0.4
 click==6.7
 cryptography==2.3.1
 Flask==1.0.2
-Flask-JSONLocale==1.1
+Flask-JSONLocale==1.6
 flask-mwoauth==0.3.61
 future==0.16.0
 idna==2.7
