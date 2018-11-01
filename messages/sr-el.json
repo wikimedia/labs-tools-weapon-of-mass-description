@@ -1,0 +1,15 @@
+{
+	"@metadata": [],
+	"users": "Korisnici",
+	"settings": "Podešavanja",
+	"login": "Prijava",
+	"logout": "Odjava",
+	"source": "Izvor",
+	"please-login": "<a href=\"login\">Prijavite se</a>",
+	"how-many-items": "Koliko stavki podrazumevano treba da se predloži?",
+	"save-settings": "Sačuvaj podešavanja",
+	"all-users": "Svi korisnici koji su ikada koristili WMD",
+	"username": "Korisničko ime",
+	"total-edits": "Ukupan broj izmena",
+	"total": "Ukupno"
+}

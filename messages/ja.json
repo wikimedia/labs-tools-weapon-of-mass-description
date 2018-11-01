@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"users": "利用者",
+	"settings": "設定",
+	"login": "ログイン",
+	"logout": "ログアウト",
+	"please-login": "<a href=\"login\">ログイン</a>してください",
+	"save-settings": "設定を保存",
+	"username": "利用者名",
+	"total-edits": "総編集回数",
+	"total": "合計"
+}

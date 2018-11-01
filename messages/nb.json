@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"users": "Brukere",
+	"settings": "Innstillinger",
+	"login": "Logg inn",
+	"logout": "Logg ut",
+	"source": "Kilde",
+	"please-login": "Vennligst <a href=\"login\">logg inn</a>",
+	"description": "<strong>Weapon of Mass Description</strong> er et verktøy som lar deg fylle inn beskrivelser og/eller etiketter på Wikidata i stor skala. Se mer på <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata-siden</a> om dette verktøyet.",
+	"how-many-items": "Hvor mange elementer bør foreslås som standard?",
+	"save-settings": "Lagre innstillinger",
+	"all-users": "Alle brukere som har brukt WMD noensinne",
+	"username": "Brukernavn",
+	"total-edits": "Antall redigeringer",
+	"total": "Totalt"
+}

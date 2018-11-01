@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Red Winged Duck"
+		]
+	},
+	"users": "Удзельнікі",
+	"settings": "Налады",
+	"login": "Увайсьці",
+	"logout": "Выйсьці",
+	"source": "Крыніца",
+	"please-login": "Калі ласка, <a href=\"login\">увайдзіце</a>",
+	"description": "<strong>Зброя масавага апісаньня</strong> — інструмэнт, які дазваляе вам масава запаўняць апісаньні і/ці меткі ў Вікізьвестках. Глядзіце падрабязьней на <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">старонцы Вікізьвестак</a> пра гэты інструмэнт.",
+	"how-many-items": "Колькі элемэнтаў павінна прапаноўвацца па змоўчаньні?"
+}

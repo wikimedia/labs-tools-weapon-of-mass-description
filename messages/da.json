@@ -9,6 +9,9 @@
 	"login": "Log på",
 	"logout": "Log af",
 	"source": "Kilde",
+	"please-login": "Venligst, <a href=\"login\">log på</a>",
 	"save-settings": "Gem indstillinger",
-	"username": "Brugernavne"
+	"username": "Brugernavne",
+	"total-edits": "Samlet antal redigeringer",
+	"total": "Samlet"
 }
