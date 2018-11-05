@@ -6,7 +6,9 @@
 	},
 	"users": "Użytkownicy",
 	"settings": "Ustawienia",
+	"logout": "Wyloguj",
 	"source": "Źródło",
+	"please-login": "<a href=\"login\">Zaloguj się</a>",
 	"save-settings": "Zapisz ustawienia",
 	"username": "Nazwa użytkownika",
 	"total-edits": "Całkowita liczba edycji"

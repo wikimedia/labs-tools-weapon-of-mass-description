@@ -4,12 +4,16 @@
 			"Martin Urbanec"
 		]
 	},
+	"users": "Uživatelé",
 	"settings": "Nastavení",
 	"login": "Přihlásit se",
 	"logout": "Odhlásit se",
 	"source": "Zdroj",
 	"please-login": "Prosím, <a href=\"login\">přihlašte se</a>",
+	"description": "<strong>Weapon of Mass Description</strong> jen nástroj, který vám umožní hromadně přidávat štítky/popisky do Wikidat. Vizte více na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">stránce o tomto nástroji na Wikidatech</a>.",
 	"save-settings": "Uložit nastavení",
 	"all-users": "Všichni uživatelé, kteří někdy použili WMD",
-	"username": "Uživatelské jméno"
+	"username": "Uživatelské jméno",
+	"total-edits": "Celkový počet editací",
+	"total": "Celkem"
 }
