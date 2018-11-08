@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aue Nai"
+		]
+	},
+	"users": "ညးလွပ်",
+	"settings": "ဒၞာဲမဖျေဟ်ဒၞာဲ",
+	"login": "လုပ်",
+	"logout": "တိတ်ဇၟိက်",
+	"source": "တမ်ရိုဟ်",
+	"please-login": "ပဂုန်တုဲ, <a href=\"login\">လုပ်လံက်အေန်</a>",
+	"save-settings": "ဂိုၚ်သိပ် မချိၚ်ဒၟံၚ်",
+	"username": "ယၟုညးလွပ်",
+	"total-edits": "လၟိဟ် မပလေဝ်ဒါန်လဝ် သီုဖအိုတ်",
+	"total": "ပံၚ်ဖအိုတ်"
+}
