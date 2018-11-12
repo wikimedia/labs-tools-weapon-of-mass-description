@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Banjo"
+			"Banjo",
+			"Elisardojm"
 		]
 	},
 	"users": "Usuarios",
@@ -9,7 +10,11 @@
 	"login": "Acceder",
 	"logout": "Saír",
 	"source": "Fonte",
+	"please-login": "<a href=\"login\">Inicie sesión</a>, por favor",
+	"description": "A <strong>Arma de Descrición Masiva</strong> é unha ferramenta que lle permite encher descricións e/ou etiquetas Wikidata en masa. Coñeza máis na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">páxina de Wikidata</a> sobre esta ferramenta.",
+	"how-many-items": "Cantos elementos deben ser suxeridos por defecto?",
 	"save-settings": "Gardar os axustes",
+	"all-users": "Todos os usuarios que xa usaron a AMD",
 	"username": "Nome de usuario",
 	"total-edits": "Número total de edicións",
 	"total": "Total"
