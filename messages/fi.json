@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"users": "Käyttäjät",
+	"settings": "Asetukset",
+	"login": "Kirjaudu",
+	"logout": "Kirjaudu ulos",
+	"source": "Lähde",
+	"please-login": "<a href=\"login\">Kirjaudu</a>",
+	"save-settings": "Tallenna asetukset",
+	"username": "Käyttäjänimi",
+	"total-edits": "Muokkausten kokonaismäärä",
+	"total": "Yhteensä"
+}
