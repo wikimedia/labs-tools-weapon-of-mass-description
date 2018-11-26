@@ -8,7 +8,10 @@
 	"settings": "Impostazioni",
 	"login": "Accedi",
 	"logout": "Esci",
+	"please-login": "Pere favore, <a href=\"login\">accedi</a>",
+	"how-many-items": "Quanti elementi dovrebbero essere suggeriti per opzione predefinita?",
 	"save-settings": "Salva impostazioni",
+	"all-users": "Tutti gli utenti che hanno mai usato WMD",
 	"username": "Nome utente",
 	"total-edits": "Numero totale di modifiche",
 	"total": "Totale"
