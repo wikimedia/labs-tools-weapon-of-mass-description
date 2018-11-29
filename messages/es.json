@@ -2,17 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"Laura Ospina",
-			"LittlePuppers"
+			"LittlePuppers",
+			"Tiberius1701"
 		]
 	},
 	"users": "Usuarios",
 	"logout": "Salir",
 	"source": "Fuente",
 	"please-login": "Por favor, <a href=\"entre\">login</a>",
-	"description": "<strong>El Arma de Descripción en Masa</strong> es una herramienta que permite completar descripciones y/o etiquetas en Wikidata en masa. Ver más en <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\"> página de Wikidata</a> acerca de esta herramienta.",
-	"how-many-items": "¿Cuántos elementos deben ser sugeridos por defecto?",
-	"save-settings": "Guardar Configuración",
-	"all-users": "Todos los  usuarios que han utilizado WMD",
+	"description": "<strong>Arma de la descripción en masa</strong> es una herramienta que permite completar descripciones y/o etiquetas en Wikidata en masa. Ver más en la <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\"> página de Wikidata</a> acerca de esta herramienta.",
+	"how-many-items": "¿Cuántos elementos se deben sugerir por defecto?",
+	"save-settings": "Guardar configuración",
+	"all-users": "Todos los usuarios que ha usado alguna vez WMD",
 	"username": "Nombre de usuario",
 	"total-edits": "Número total de ediciones",
 	"total": "Total"
