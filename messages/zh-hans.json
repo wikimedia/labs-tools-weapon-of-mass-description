@@ -9,6 +9,7 @@
 	"login": "登录",
 	"logout": "注销",
 	"source": "来源",
+	"please-login": "请先<a href=\"login\">登录</a>",
 	"how-many-items": "默认情况下应该建议多少项目？",
 	"save-settings": "提交设置",
 	"all-users": "所有使用过WMD的用户",
