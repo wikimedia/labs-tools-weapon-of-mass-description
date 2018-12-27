@@ -1,15 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Woytecr"
 		]
 	},
 	"users": "Użytkownicy",
 	"settings": "Ustawienia",
+	"login": "Zaloguj się",
 	"logout": "Wyloguj",
-	"source": "Źródło",
+	"source": "Kod źródłowy",
 	"please-login": "<a href=\"login\">Zaloguj się</a>",
+	"description": "<strong>Weapon of Mass Description</strong> to narzędzie do masowego wypełniania opisów i etykiet elementów w Wikidanych. Więcej informacji o tym narzędziu na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">tej stronie</a>.",
+	"how-many-items": "Ile elementów domyślnie sugerować?",
 	"save-settings": "Zapisz ustawienia",
+	"all-users": "Wszyscy użytkownicy, którzy użyli WMD",
 	"username": "Nazwa użytkownika",
-	"total-edits": "Całkowita liczba edycji"
+	"total-edits": "Całkowita liczba edycji",
+	"total": "Razem"
 }

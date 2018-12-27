@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Marcelhospers",
+			"Optilete"
 		]
 	},
 	"users": "Gebruikers",
@@ -9,6 +11,9 @@
 	"login": "Aanmelden",
 	"logout": "Afmelden",
 	"source": "Bron",
+	"please-login": "Alstublieft, <a href=\"login\">login</a>",
+	"description": "<strong>Weapon Mass Description</strong> is een tool waarmee je beschrijvingen en/of labels in grote hoeveelheden aan Wikidata kunt toevoegen. Zie meer op <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata-pagina</a> over deze tool.",
+	"how-many-items": "Hoeveel items moeten standaard worden getoond?",
 	"save-settings": "Instellingen opslaan",
 	"all-users": "Alle gebruikers die ooit WMD hebben gebruikt",
 	"username": "Gebruikersnaam",
