@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piramidion"
+		]
+	},
+	"users": "Користувачі",
+	"settings": "Налаштування",
+	"login": "Увійти",
+	"logout": "Вийти",
+	"source": "Джерело",
+	"please-login": "Будь ласка, <a href=\"login\">увійдіть</a>",
+	"description": "<strong>Weapon of Mass Description</strong> («зброя масового опису») — це інструмент, що дає Вам змогу масово заповнювати описи та/або назви в елементах Вікіданих. Дізнайтесь більше про цей інструмент на <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">відповідній сторінці у Вікіданих</a>.",
+	"how-many-items": "Скільки елементів має бути запропоновано за замовчуванням?",
+	"save-settings": "Зберегти налаштування",
+	"all-users": "Усі користувачі, що коли-небудь користувались WMD",
+	"username": "Ім'я користувача",
+	"total-edits": "Загальна кількість редагувань",
+	"total": "Усього"
+}

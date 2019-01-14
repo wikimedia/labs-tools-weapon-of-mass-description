@@ -4,7 +4,8 @@
 			"Laura Ospina",
 			"LittlePuppers",
 			"Tiberius1701",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"Fitoschido"
 		]
 	},
 	"users": "Usuarios",
@@ -12,7 +13,7 @@
 	"login": "Iniciar sesión",
 	"logout": "Salir",
 	"source": "Fuente",
-	"please-login": "Por favor, <a href=\"login\">inicia sesión</a>",
+	"please-login": "<a href=\"login\">Accede</a> a tu cuenta",
 	"description": "<strong><i>Weapon of Mass Description</i></strong> es una herramienta que permite completar descripciones y/o etiquetas en Wikidata en masa. Ver más en la <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">página de Wikidata</a> acerca de esta herramienta.",
 	"how-many-items": "¿Cuántos elementos se deben sugerir por defecto?",
 	"save-settings": "Guardar configuración",
