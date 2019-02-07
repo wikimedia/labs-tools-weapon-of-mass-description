@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gwenn-Ael"
+		]
+	},
+	"users": "Implijerien",
+	"settings": "Arventennoù",
+	"login": "Kevreañ",
+	"logout": "Digevreañ",
+	"source": "Mammenn",
+	"please-login": "<a href=\"login\">kevreit</a>, mar plij",
+	"description": "<strong>arm deskrivañ a-vras</strong> eo ur benveg da leuniañ deskrivadurioù ha skridennadoù Wikidata a-vras. Evit gouzout hiroc'h war <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\"> ar bajenn Wikidata</a> war ar benveg-mañ.",
+	"how-many-items": "Pet elfenn a rank bezañ kinniget dre ziouer ?",
+	"save-settings": "Enrollañ an arventennoù",
+	"all-users": "An holl implijerien o deus implijet WMD dija",
+	"username": "Anv implijer",
+	"total-edits": "Niver hollek a gemmoù",
+	"total": "Hollad"
+}
