@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"L2212"
+		]
+	},
+	"users": "Impitadores",
+	"settings": "Impostatziones",
+	"login": "Intra",
+	"logout": "Essi",
+	"source": "Mitza",
+	"please-login": "Pro praghere, <a href=\"login\">intra</a>",
+	"description": "<strong>S'Arma de Modìfica de Massa</strong> est un'aina chi permitit de insertare descritziones e/o etichetas in Wikidata in massa. Pro nde ischire de prus leghe·ti sa <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">pàgina de Wikidata</a> a pitzu de custa aina.",
+	"how-many-items": "Cantos elementos diant dèpere èssere cussigiados in s'impostatzione predefinida?",
+	"save-settings": "Sarva sas impostatziones",
+	"all-users": "Totu sos impitadores chi ant mai impreadu WMD",
+	"username": "Nùmene impitadore",
+	"total-edits": "Nùmeru totale de modìficas",
+	"total": "Totale"
+}
