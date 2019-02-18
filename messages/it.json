@@ -8,6 +8,7 @@
 	"settings": "Impostazioni",
 	"login": "Accedi",
 	"logout": "Esci",
+	"source": "Fonte",
 	"please-login": "Pere favore, <a href=\"login\">accedi</a>",
 	"how-many-items": "Quanti elementi dovrebbero essere suggeriti per opzione predefinita?",
 	"save-settings": "Salva impostazioni",
