@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"users": "Korisnici",
+	"settings": "Podešavanja",
+	"login": "Prijava",
+	"logout": "Odjava",
+	"source": "Izvor",
+	"please-login": "<a href=\"login\">Prijavite se</a>",
+	"description": "<strong>Masovni opis Wikipodataka</strong> je alat koji vam omogućuje masovno unošenje opisa i/ili natpisa u Wikidatu. Više ćete saznati na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">stranici ovog alata</a>.",
+	"how-many-items": "Koliko predmeta treba ponuditi podrazumevano?",
+	"save-settings": "Sačuvaj postavke",
+	"all-users": "Svi korisnici koji su ikada koristili ovaj alat",
+	"username": "Korisničko ime",
+	"total-edits": "Ukupni broj uređivanja",
+	"total": "Ukupno"
+}

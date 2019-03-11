@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"YaronSh"
+		]
+	},
+	"users": "משתמשים",
+	"settings": "הגדרות",
+	"login": "כניסה",
+	"logout": "יציאה",
+	"source": "מקור",
+	"please-login": "נא <a href=\"login\">להיכנס</a>",
+	"description": "<strong>נשק להסברה המונית</strong> הוא כלי שמאפשר לך למלא תיאורים ו/או תוויות בוויקינתונים על כמות גדולה של פריטים. מידע נוסף על הכלי הזה דרך ה<a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">עמוד בוויקינתונים</a>.",
+	"how-many-items": "כמה פריטים להציע כבררת מחדל?",
+	"save-settings": "שמירת הגדרות",
+	"all-users": "כל המשתמשים שאי פעם השתמשו בנשק להסברה המונית",
+	"username": "שם משתמש",
+	"total-edits": "מספר עריכות כולל",
+	"total": "סך הכול"
+}
