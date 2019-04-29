@@ -10,6 +10,7 @@
 	"logout": "Esci",
 	"source": "Fonte",
 	"please-login": "Pere favore, <a href=\"login\">accedi</a>",
+	"description": "<strong>Weapon of Mass Description</strong> è uno strumento che ti consente di compilare descrizioni e/o etichette su Wikidata in maniera massiva. Vedi anche la <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">pagina Wikidata</a> su questo strumento.",
 	"how-many-items": "Quanti elementi dovrebbero essere suggeriti per opzione predefinita?",
 	"save-settings": "Salva impostazioni",
 	"all-users": "Tutti gli utenti che hanno mai usato WMD",

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aguve"
+		]
+	},
+	"users": "Ezãlawo",
+	"settings": "Tiatiawo",
+	"login": "Geɖeme",
+	"logout": "Doleme",
+	"source": "dzɔƒe",
+	"please-login": "Taflatsɛ, <a href=\"login\">ge ɖe eme</a>",
+	"description": "<strong>Nuɖɔɖɔ Gbogbo Ƒe Dɔwɔnu</strong> nye dɔwɔnu aɖe si dzi nàto ada nyatakaka gbogbo aɖewo ɖe Wikidata. Yi <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata axa</a> nàKpɔ numeɖeɖe geɖe tso esia ŋu.",
+	"how-many-items": "Nu nenie anɔ dzedzem le eɖokui si?",
+	"save-settings": "Dzra tiatiawo ɖo",
+	"all-users": "Ezãla siwo katã mezã Nuɖɔɖɔ Gbogbo Ƒe Dɔwɔnua kpɔ o",
+	"username": "Ezazãŋkɔ",
+	"total-edits": "Tɔtrɔ siwo katã wowɔ",
+	"total": "Wo Katã"
+}
