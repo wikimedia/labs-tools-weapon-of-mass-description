@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirin"
+		]
+	},
+	"users": "Uzantoj",
+	"settings": "Agordoj",
+	"login": "Ensaluti",
+	"logout": "Elsaluti",
+	"source": "Fonto",
+	"please-login": "Bonvolu <a href=\"login\">ensaluti</a>",
+	"description": "<strong>Armilo de Amasa Priskribo</strong> estas ilo por amase aldoni priskribojn kaj/aŭ etikedojn al Vikidatumoj. Legu pli pri tiu ilo ĉe <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">la Vikidatuma paĝo</a>.",
+	"how-many-items": "Kiom da eroj mi sugestu, implicite?",
+	"save-settings": "Konservi agordojn",
+	"all-users": "Ĉiuj uzantoj kiuj iam uzis la Armilon de Amasa Priskribo",
+	"username": "Uzantonomo",
+	"total-edits": "Suma nombro de redaktoj",
+	"total": "Sumo"
+}

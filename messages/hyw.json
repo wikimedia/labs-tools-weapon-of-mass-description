@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Azniv Stepanian"
 		]
 	},
 	"users": "Գործածողներ",
@@ -9,6 +10,6 @@
 	"login": "Մուտք գործել",
 	"logout": "Դուրս գալ",
 	"source": "Աղբիւր",
-	"username": "Գործածողի անուն",
+	"username": "Մասնակիցի անուն",
 	"total": "Ընդամէնը"
 }

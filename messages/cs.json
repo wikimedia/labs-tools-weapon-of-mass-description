@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Martin Urbanec",
-			"Patriccck"
+			"Patriccck",
+			"Mormegil"
 		]
 	},
 	"users": "Uživatelé",
@@ -12,6 +13,7 @@
 	"source": "Zdroj",
 	"please-login": "Prosím, <a href=\"login\">přihlašte se</a>",
 	"description": "<strong>Weapon of Mass Description</strong> jen nástroj, který vám umožní hromadně přidávat štítky/popisky do Wikidat. Viz více na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">stránce o tomto nástroji na Wikidatech</a>.",
+	"how-many-items": "Kolik položek se má implicitně navrhnout?",
 	"save-settings": "Uložit nastavení",
 	"all-users": "Všichni uživatelé, kteří někdy použili WMD",
 	"username": "Uživatelské jméno",
