@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amirsara"
+			"Amirsara",
+			"FarsiNevis"
 		]
 	},
 	"users": "کاربران",
@@ -9,9 +10,10 @@
 	"login": "ورود",
 	"logout": "خروج",
 	"source": "منبع",
-	"please-login": "لطفاً، <a href=\"login\">واردشوید</a>",
+	"please-login": "لطفاً <a href=\"login\">وارد شوید</a>",
+	"how-many-items": "چند مورد به‌صورت پیش‌فرض پیشنهاد شود؟",
 	"save-settings": "ذخیرهٔ تنظیمات",
 	"username": "نام کاربری",
-	"total-edits": "شمار کلی ویرایش‌ها",
+	"total-edits": "شمار کل ویرایش‌ها",
 	"total": "مجموع"
 }
