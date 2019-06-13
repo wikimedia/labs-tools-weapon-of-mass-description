@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shahriar dehghani"
+		]
+	},
+	"users": "کاربأرَل",
+	"settings": "تأنظیمل",
+	"login": "وارد وابیدن",
+	"logout": "وَدَر رحتَن",
+	"source": "سأرچیشمە",
+	"please-login": "لطفاً <a href=\"login\">وارد وابِیْد</a>",
+	"how-many-items": "چند مورد و ‌اینگل و صورت پیش‌فرض پیشنهاد وابو ؟",
+	"save-settings": "ذخیرهٔ کردن تنظیمل",
+	"all-users": "همه کارورلی که و WMD استفاده کردنه",
+	"username": "نوم کارور:",
+	"total-edits": "تمام عددَل تغیرل",
+	"total": "مجموع"
+}
