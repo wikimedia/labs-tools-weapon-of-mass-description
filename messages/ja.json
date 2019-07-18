@@ -1,15 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Omotecho"
 		]
 	},
 	"users": "利用者",
 	"settings": "設定",
 	"login": "ログイン",
 	"logout": "ログアウト",
+	"source": "情報源",
 	"please-login": "<a href=\"login\">ログイン</a>してください",
+	"description": "<strong>Weapon of Mass Description</strong>ウィキデータの説明もしくは/とラベルを一括して記入するツールです。このツールの詳細は<a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">ウィキデータのページ</a>をご参照ください。",
+	"how-many-items": "既定では何件の項目を提案すればよいですか？",
 	"save-settings": "設定を保存",
+	"all-users": "今までにWMDを使ったことがある利用者",
 	"username": "利用者名",
 	"total-edits": "総編集回数",
 	"total": "合計"
