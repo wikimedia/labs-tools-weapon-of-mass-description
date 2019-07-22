@@ -10,6 +10,8 @@
 	"logout": "Чыгу",
 	"source": "Чыганак",
 	"please-login": "Рәхим итеп, <a href=\"login\">керегезче</a>",
+	"description": "<strong>Weapon of Mass Description</strong> (Массакүләм тасвирлау коралы) — бу Викимәгълүматта тасвирлама һәм/яки кыстыргыч массакүләм тутыру өчен корал. Бу корал турында <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Викимәгълүмат битендә</a> тулырак укып була.",
+	"how-many-items": "Килешү буенча ничә әйбер тәкъдим итәргә кирәк?",
 	"save-settings": "Көйләнмәләрне саклау",
 	"all-users": "WMD ны кайчан да булса кулланылган барлык кулланучылар",
 	"username": "Кулланучы исеме",
