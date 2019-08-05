@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"A Chinese Wikipedian"
+			"A Chinese Wikipedian",
+			"VulpesVulpes825"
 		]
 	},
 	"users": "用户",
@@ -10,6 +11,7 @@
 	"logout": "注销",
 	"source": "来源",
 	"please-login": "请先<a href=\"login\">登录</a>",
+	"description": "<strong>Weapon of Mass Description</strong>  是能够让您在维基数据大量填充描述以及/或标签的工具。请查看 <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">维基数据页面</a>了解更多。",
 	"how-many-items": "默认情况下应该建议多少项目？",
 	"save-settings": "提交设置",
 	"all-users": "所有使用过WMD的用户",
