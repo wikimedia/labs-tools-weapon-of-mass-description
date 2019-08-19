@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saraiki"
+			"Saraiki",
+			"Mehtab ahmed"
 		]
 	},
-	"users": "يوزرس",
+	"users": "واپرائيندڙَ",
 	"settings": "ترتيبون",
 	"login": "داخل ٿيو",
 	"logout": "خارج ٿيو",
