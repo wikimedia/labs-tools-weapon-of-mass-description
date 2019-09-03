@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gott wisst"
+		]
+	},
+	"users": "Brūcendas",
+	"settings": "Settnessa",
+	"login": "Inmeldian",
+	"logout": "Ūtmeldian",
+	"source": "Fruma",
+	"please-login": "Bidde þē lā, <a href=\"login\">inmelda</a>",
+	"description": "<strong>Weapon of Mass Description</strong> is tōl þe lǣteþ þec don amearcunga to Wikidata on greatum rime. Ræd ma be þǣ» <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata tramete</a> ymb þis tōl.",
+	"how-many-items": "Hū fela þinga āh hit befæstan tō gewunan?",
+	"save-settings": "Hordian gesettnessa",
+	"all-users": "Ealle brūcendas þā ǣfre brucon WMD",
+	"username": "Brūcendnama",
+	"total-edits": "Full rīm adihtunga",
+	"total": "Full rīm"
+}
