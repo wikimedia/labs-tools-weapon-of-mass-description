@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Semina x"
+		]
+	},
+	"users": "Korisnici",
+	"settings": "Postavke",
+	"login": "Prijava",
+	"logout": "Odjavi se",
+	"source": "Izvor",
+	"please-login": "Molim Vas, <a href=\"login\">login</a>",
+	"description": "<strong>Weapon of Mass Description</strong> je alat koji Vam dopušta da masovno ispunite opise i/ili oznake u Wikidata. Više na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata page</a> o ovom alatu.",
+	"how-many-items": "Koliko predmeta bi trebalo biti predloženo po defaultu?",
+	"save-settings": "Spremi postavke",
+	"all-users": "Svi korisnici koji su ikad koristili WMD",
+	"username": "Korisničko ime",
+	"total-edits": "Ukupan broj izmjena",
+	"total": "Ukupno"
+}
