@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jaeminlovetaejoon"
+		]
+	},
+	"users": "ပှၤသူတၢ်ဖိ",
+	"settings": "Settings",
+	"login": "ဝၣ်နုၤလီၤ",
+	"logout": "ဟးထီၣ်",
+	"source": "တၢ်အခီၣ်ထံး",
+	"please-login": "ဝံသးစူၤ <a href=\"login\">login</a>",
+	"description": "<strong>Weapon of Mass Description</strong> is a tool that allows you to fill descriptions and/or labels to Wikidata en masse. See more at <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata page</a> about this tool.",
+	"username": "ပှၤသူတၢ်ဖိမံၤ",
+	"total-edits": "အဲၣ်ဒံၣ်ခဲလၢာ်",
+	"total": "ခဲလၢာ်"
+}

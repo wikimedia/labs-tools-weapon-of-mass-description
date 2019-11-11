@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hedda"
+			"Hedda",
+			"BaRaN6161 TURK"
 		]
 	},
 	"users": "Kullanıcılar",
@@ -10,7 +11,7 @@
 	"logout": "Oturumu kapat",
 	"source": "Kaynak",
 	"please-login": "Lütfen, <a href=\"login\">oturum açın</a>",
-	"description": "<strong>Kitle Tanımlama Silahı (Weapon of Mass Description)</strong>, açıklamaları ve/veya etiketleri toplu bir hâlde Wikidata'ya doldurmanıza izin veren bir araçtır. Daha fazlasını <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Vikiveri</a>'deki sayfasından okuyun.",
+	"description": "<strong>Kitle Tanımlama Silahı</strong>, açıklamaları ve/veya etiketleri toplu bir hâlde Vikiveri'ye doldurmanıza izin veren bir araçtır. Daha fazlasını <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Vikiveri</a>'deki sayfasından okuyun.",
 	"how-many-items": "Varsayılan olarak kaç öge önerilmelidir?",
 	"save-settings": "Ayarları kaydet",
 	"all-users": "WMD kullanan tüm kullanıcılar",
