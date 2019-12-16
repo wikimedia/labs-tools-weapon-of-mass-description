@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andemta"
+		]
+	},
+	"users": "ተጠቃሚዎች",
+	"settings": "ምርጫዎች",
+	"login": "ለመግባት",
+	"logout": "መውጫ",
+	"source": "ምንጭ",
+	"please-login": "እባክዎን <a href=\"login\">ለመግባት</a>",
+	"description": "<strong>የጅምላ መግለጫ መሣሪያ</strong> ዊኪ መረጃዎችን በጅምላ ለመግለፅ ወይም ለመፈረጅ የሚያግዝ መገልገያ ነው:: ለበለጠ መረጃ <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">ዊኪዳታ ገፅን</a> ተመልከቱ::",
+	"how-many-items": "ምን ያህል ነገሮች በተለምዶ ይቅረቡ?",
+	"save-settings": "ምርጫዎችን ለማስቀመጥ",
+	"all-users": "WMD እስከዛሬ የተገለገሉ ተጠቃሚዎች",
+	"username": "የብዕር ስም",
+	"total-edits": "ጠቅላላ የእርማት ቁጥር",
+	"total": "ጠቅላላ"
+}
