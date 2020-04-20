@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fierodelveneto",
+			"Saraiki"
+		]
+	},
+	"users": "Utenti",
+	"settings": "Inpostasion",
+	"login": "Va drento",
+	"logout": "Va fora",
+	"source": "Fonte",
+	"please-login": "Par favore, <a href=\"login\">va drento</a>",
+	"description": "<strong>Weapon of Mass Description</strong> el xé on intrumento che el te consente de scrivare descrision e/o etichete so Wikidata in manjiera masiva. Varda anca ła <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">pàjina Wikidata</a> so sto instrumento.",
+	"how-many-items": "Cuanti ełementi i garia da esarte sujerie par opsion predefinia?",
+	"save-settings": "Salva inpostasion",
+	"all-users": "Tuti i utenti che i ga mai doparà WMD",
+	"username": "Nome utente",
+	"total-edits": "Nùmaro totale de canbiamenti",
+	"total": "Totałe"
+}
