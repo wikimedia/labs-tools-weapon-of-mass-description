@@ -1,12 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Mguix"
 		]
 	},
 	"users": "Usuaris",
 	"settings": "Configuració",
+	"login": "Iniciar sessió",
+	"logout": "Finalitzar la sessió",
 	"source": "Font",
+	"please-login": "Si us plau, <a href=\"login\">entra</a>",
+	"description": "<strong> Arma de la descripció massiva </strong> és una eina que permet omplir descripcions i / o etiquetes a Wikidata en massa. Vegeu més informació a <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\"> pàgina de Wikidata </a> sobre aquesta eina.",
+	"how-many-items": "Quants elements haurien de ser suggerits per defecte?",
 	"save-settings": "Desa la configuració",
+	"all-users": "Tots els usuaris que mai han utilitzat WMD",
+	"username": "Nom d’usuari",
+	"total-edits": "Nombre total d'edicions",
 	"total": "Total"
 }
