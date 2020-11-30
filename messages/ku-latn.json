@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bikarhêner"
+		]
+	},
+	"users": "Bikarhêner",
+	"settings": "Mîheng",
+	"login": "Têkeve",
+	"logout": "Derkeve",
+	"source": "Çavkanî",
+	"please-login": "Ji kerema xwe, <a href=\"login\">têkeve</a>",
+	"description": "<strong>Sîleha Danasîna Kîtleyê</strong> amûrek e ku rê dide mirov ku mirov karibe danasîn û/an etîketên Wîkîdaneyê bi komî tijî bike. Derbarê vê amûrê de ji ser <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata page</a> zêdetir tiştan hîn bibe.",
+	"how-many-items": "Divê çend hêman wek standard bên pêşniyarkirin?",
+	"save-settings": "Mîhengan qeyd bike",
+	"all-users": "Temamiya bikarhênerên ku WMDê bi kar anîne",
+	"username": "Navê bikarhêner",
+	"total-edits": "Hejmara guherandinan",
+	"total": "Tevahî"
+}
