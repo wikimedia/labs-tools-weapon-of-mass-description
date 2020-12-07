@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"PastelKos"
+		]
+	},
+	"users": "Χρώμενοι",
+	"settings": "Ῥυθμίσεις",
+	"login": "Συνδεῖσθαι",
+	"logout": "Ἀποσυνδεῖσθαι",
+	"source": "Πηγή",
+	"please-login": "Παρακαλῶ, <a href=\"login\">συνδεῖσθαι</a>",
+	"save-settings": "Σῴζειν τὰς ῥυθμίσιες",
+	"username": "Ὄνομα χρωμένου",
+	"total-edits": "Ἀριθμὸς μεταγραφῶν",
+	"total": "Συνολικόν"
+}
