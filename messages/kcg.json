@@ -1,20 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Kambai Akau"
 		]
 	},
-	"users": "Á̠nienta̠m",
+	"users": "Á̱nienta̱m",
 	"settings": "Jhyuk",
 	"login": "Nwuo",
 	"logout": "Ghwut",
-	"source": "A̠ni̠nan",
-	"please-login": "Ma̠sa̠kut, <a href=\"nwuo\">nwuo</a>",
-	"description": "<strong>Kyangzwang Nwuat Kídee Á̠kpa</strong> yet kyangta̠m zang hwa nghwon ang a nhyat a̠yaalama ma̠ng/ku kídee nat Wikipidya ma̠ng á̠kpa. Di nkyang nghyang ma̠ <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata page</a> tazwa kyangta̠m huni.",
-	"how-many-items": "Nkyang mmang nia á̠ na nwuak shim tazwa neet a̠khwop wu?",
+	"source": "A̱ni̱nan",
+	"please-login": "Ma̱sa̱kut, <a href=\"nwuo\">nwuo</a>",
+	"description": "<strong>Kyangzwang Nwuat Kídee Á̱kpa</strong> yet kyangta̱m zang hwa nghwon ang a nhyat a̱yaalama ma̱ng/ku kídee nat Wikipidya ma̱ng á̱kpa. Di nkyang nghyang ma̱ <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata page</a> tazwa kyangta̱m huni.",
+	"how-many-items": "Nkyang mmang nia á̱ na nwuak shim tazwa neet a̱khwop wu?",
 	"save-settings": "Khap jhyuk sak",
-	"all-users": "A̠mgba̠m á̠nienta̠m a̠nyanyan bya ku nyia̠ ta̠m ma̠ng WMD",
-	"username": "A̠lyoot a̠tyuta̠m",
-	"total-edits": "A̠mgba̠m la̠mba lyulyuut",
-	"total": "A̠mgba̠m"
+	"all-users": "A̱mgba̱m á̱nienta̱m a̱nyanyan bya ku nyia̱ ta̱m ma̱ng WMD",
+	"username": "A̱lyoot a̱tyuta̱m",
+	"total-edits": "A̱mgba̱m la̱mba lyulyuut",
+	"total": "A̱mgba̱m"
 }
