@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"users": "Uporabniki",
+	"settings": "Nastavitve",
+	"login": "Prijava",
+	"logout": "Odjava",
+	"source": "Vir",
+	"please-login": "Prosimo, <a href=\"login\">prijavite se</a>",
+	"description": "<strong>Orožje za množično opisovanje</strong> (WMD) je orodje, ki vam omogoča množično dodajanje opisov in/ali oznak v Wikipodatkih. Za več o tem orodju glejte  <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">stran v Wikipodatkih</a>.",
+	"how-many-items": "Koliko predmetov naj bo predlaganih po privzetem?",
+	"save-settings": "Shrani nastavitve",
+	"all-users": "Vsi uporabniki, ki so kadarkoli uporabljali WMD",
+	"username": "Uporabniško ime",
+	"total-edits": "Skupno število urejanj",
+	"total": "Skupno"
+}
