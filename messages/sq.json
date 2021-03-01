@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eraldkerciku"
+		]
+	},
+	"users": "Përdoruesit",
+	"settings": "Cilësimet",
+	"login": "Identifikohu",
+	"logout": "Dil",
+	"source": "Burimi",
+	"please-login": "Ju lutemi, <a href=\"login\"> identifikohuni </a>",
+	"description": "<strong> Arma e Përshkrimit të Masës </strong> është një mjet që ju lejon të plotësoni përshkrimet dhe / ose etiketat në Wikidata në mënyrë masive. Shikoni më shumë në <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description \"> faqja e Wikidata </a> në lidhje me këtë mjet.",
+	"how-many-items": "Sa artikuj duhet të sugjerohen si parazgjedhje?",
+	"save-settings": "Ruaji rregullimet",
+	"all-users": "Të gjithë përdoruesit që kanë përdorur ndonjëherë WMD",
+	"username": "Emri i përdoruesit",
+	"total-edits": "Numri total i redaktimeve",
+	"total": "Gjithsej"
+}
