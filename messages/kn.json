@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"AVSmalnad77"
+		]
+	},
+	"users": "ಬಳಕೆದಾರರು",
+	"settings": "ವ್ಯವಸ್ಥೆಗಳು",
+	"login": "ಲಾಗ್ ಇನ್",
+	"logout": "ಲಾಗ್ ಔಟ್",
+	"source": "ಮೂಲ",
+	"please-login": "ದಯವಿಟ್ಟು, <a href=\"login\">ಲಾಗ್ ಇನ್</a> ಆಗಿ",
+	"save-settings": "ವ್ಯವಸ್ಥೆಗಳನ್ನು ಉಳಿಸಿ",
+	"username": "ಬಳಕೆದಾರರ ಹೆಸರು",
+	"total-edits": "ಒಟ್ಟು ಸಂಪಾದನೆಗಳ ಸಂಖ್ಯೆ",
+	"total": "ಒಟ್ಟು"
+}

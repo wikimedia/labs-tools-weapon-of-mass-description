@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jaroslav.micek"
+		]
+	},
+	"users": "Používatelia",
+	"settings": "Nastavenia",
+	"login": "Prihlásenie",
+	"logout": "Odhlásenie",
+	"source": "Zdroj",
+	"please-login": "Prosím, <a href=\"login\">prihláste sa</a>",
+	"description": "<strong>Zbraň hromadného popisu</strong>je nástroj umožňujúci hromadné pridávanie popisov a štítkov do Wikidáta. Viac informácií o tomto nástroji nájdete na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata page</a>.",
+	"how-many-items": "Koľko položiek má byť predvolené?",
+	"save-settings": "Uložiť nastavenia",
+	"all-users": "Všetci používatelia, ktorí niekedy použili tento nástroj",
+	"username": "Používateľské meno",
+	"total-edits": "Celkový počet úprav",
+	"total": "Celkom"
+}
