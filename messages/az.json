@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"AZISS"
+			"AZISS",
+			"NMW03"
 		]
 	},
 	"users": "İstifadəçilər",
@@ -16,5 +17,5 @@
 	"all-users": "Hər nə vaxtsa WMD istifadə etmiş istifadəçilər",
 	"username": "İstifadəçi adı",
 	"total-edits": "Redaktələrin ümumi sayı",
-	"total": "Yekun"
+	"total": "Ümumi"
 }

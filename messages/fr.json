@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"Verdy p",
 			"Wladek92"
 		]
 	},
@@ -11,7 +12,7 @@
 	"logout": "Déconnexion",
 	"source": "Source",
 	"please-login": "Veuillez vous <a href=\"login\">connecter</a>",
-	"description": "<strong>Arme de description massive</strong> est un outil qui vous permet de remplir en masse des destriptions ou des libellés de Wikidata. En savoir plus sur <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">la page Wikidata</a> sur cet outil.",
+	"description": "<strong>Arme de description massive</strong> est un outil qui vous permet de remplir en masse des descriptions ou des libellés de Wikidata. En savoir plus sur <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">la page Wikidata</a> concernant cet outil.",
 	"how-many-items": "Combien d’éléments doivent être suggérés par défaut ?",
 	"save-settings": "Enregistrer les paramètres",
 	"all-users": "Tous les utilisateurs qui ont déjà utilisé WMD",
