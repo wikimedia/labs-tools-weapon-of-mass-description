@@ -1,13 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patriot Kur"
+			"Patriot Kur",
+			"Гусейн"
 		]
 	},
 	"users": "İştirakəkon",
+	"settings": "Сәбәро",
 	"login": "Dəşi",
 	"logout": "Beşi",
 	"source": "Səvon",
+	"please-login": "Быһәмијән, <a href=\"login\">дәшән</a>",
+	"description": "<strong>Weapon of Mass Description</strong> (Ве-винә тәсвир огәте әбжоре) — ым диләг һаштејдә ве-винә пур карде тәсвирон ијән/ја нышонон Викидатәдә. Диләги барәдә дијәкән бә сәһифәдә ијо<a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Викидата</a>.",
+	"how-many-items": "Чәнәдә елементон товсијә карде лозиме?",
+	"save-settings": "Сәбәро огәте",
+	"all-users": "Һәммә иштирокәкон комон кејнәсә око доәшоне WMD",
 	"username": "İştirokəkə nom:",
+	"total-edits": "Овахтәтијон умумијә ашмард",
 	"total": "Cəm"
 }
