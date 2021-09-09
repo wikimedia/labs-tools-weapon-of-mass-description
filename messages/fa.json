@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amirsara",
+			"Darafsh",
 			"FarsiNevis"
 		]
 	},
@@ -11,8 +12,10 @@
 	"logout": "خروج",
 	"source": "منبع",
 	"please-login": "لطفاً <a href=\"login\">وارد شوید</a>",
+	"description": "\n<strong>Weapon of Mass Description</strong> ابزاری است که به شما امکان می‌دهد توضیحات و/یا برچسب‌ها را به صورت دسته‌جمعی در ویکی‌داده پُر کنید. جزئیات بیش‌تر در <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">صفحهٔ ویکی‌دادهٔ</a> این ابزار در دسترس است.",
 	"how-many-items": "چند مورد به‌صورت پیش‌فرض پیشنهاد شود؟",
 	"save-settings": "ذخیرهٔ تنظیمات",
+	"all-users": "همهٔ کاربرانی که تاکنون از WMD استفاده کرده‌اند",
 	"username": "نام کاربری",
 	"total-edits": "شمار کل ویرایش‌ها",
 	"total": "مجموع"
