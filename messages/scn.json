@@ -5,7 +5,13 @@
 		]
 	},
 	"users": "Utenti",
+	"settings": "Mpustazzioni",
 	"login": "Trasi",
 	"logout": "Nesci",
-	"username": "Nomu utenti"
+	"source": "Fonti",
+	"please-login": "Pi favuri, <a href=\"login\">trasi</a>",
+	"save-settings": "Sarva li mpustazzioni",
+	"username": "Nomu utenti",
+	"total-edits": "Nùmmiru tutali di canciamenti",
+	"total": "Tutali"
 }
