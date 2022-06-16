@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Z423x5c6"
+		]
+	},
+	"users": "用戶",
+	"settings": "自定喜好",
+	"login": "登入",
+	"logout": "登出",
+	"source": "來源",
+	"please-login": "請先<a href=\"login\">登入</a>。",
+	"save-settings": "保存設定",
+	"all-users": "所有用過 WMD 嘅用戶",
+	"username": "用戶名",
+	"total-edits": "編輯總數",
+	"total": "總數"
+}
