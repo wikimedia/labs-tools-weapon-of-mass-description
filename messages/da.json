@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Joedalton",
 			"Saederup92"
 		]
 	},
@@ -10,7 +11,9 @@
 	"logout": "Log af",
 	"source": "Kilde",
 	"please-login": "Venligst, <a href=\"login\">log på</a>",
+	"how-many-items": "Hvor mange elementer skal foreslås som standard?",
 	"save-settings": "Gem indstillinger",
+	"all-users": "Alle brugere der nogensinde har brugt WMD",
 	"username": "Brugernavne",
 	"total-edits": "Samlet antal redigeringer",
 	"total": "Samlet"
