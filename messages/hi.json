@@ -1,19 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
+			"Saurmandal",
 			"Shypoetess"
 		]
 	},
 	"users": "सदस्य",
 	"settings": "सेटिंग्स",
-	"login": "सत्रारंभ",
-	"logout": "लॉगआउट करें",
+	"login": "लॉग-इन करें",
+	"logout": "लॉग-आउट करें",
 	"source": "स्रोत",
-	"please-login": "कृपया <a href=\"login\">लॉगिन</a>",
-	"description": "<strong>व्यापक विवरण का हथियार</strong> एक ऐसा साधन है जो आपको विकिडेटा में सामूहिक रूप से विवरण और/या चिप्पी लगाने देता है। इस साधन के बारे में <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">विकिडाटा पृष्ठ</a> पर और देखें।",
-	"how-many-items": "डिफ़ॉल्ट रूप से कितनी वस्तुओं का सुझाव दिया जाना चाहिए?",
+	"please-login": "कृपया <a href=\"login\">लॉग-इन करें</a>",
+	"description": "<strong>व्यापक विवरण का हथियार</strong> एक ऐसा उपकरण है जिसकी मदद से आप विकिडेटा पर सामूहिक रूप से विवरण और/या लेबल जोड़ सकते हैं। इस उपकरण के बारे में इसके <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">विकिडेटा पृष्ठ</a> पर अधिक जानें।",
+	"how-many-items": "डिफ़ॉल्ट रूप से कितने आयटम्स का सुझाव दिया जाना चाहिए?",
 	"save-settings": "सेटिंग सहेजें",
-	"all-users": "वे सभी उपयोगकर्ता जिन्होंने कभी भी डब्लूएमडी का इस्तेमाल किया है",
+	"all-users": "WMD का इस्तेमाल करने वाले सभी सदस्य",
 	"username": "सदस्यनाम",
 	"total-edits": "संपादन की कुल संख्या",
 	"total": "कुल"
