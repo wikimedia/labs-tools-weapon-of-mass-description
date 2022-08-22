@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"GinawaSaHapon"
+		]
+	},
+	"users": "Mga tagagamit",
+	"settings": "Pagsasaayos",
+	"login": "Mag-login",
+	"logout": "Mag-logout",
+	"source": "Pinagkunan",
+	"please-login": "Pakiusap po, <a href=\"login\">mag-login</a>",
+	"description": "Isang kagamitan ang <strong>Weapon of Mass Description</strong> na para sa paglalarawan o pagle-label sa Wikidata nang maramihan. Matuto pa sa <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">pahina nito sa Wikidata</a> patungkol sa kagamitan na ito.",
+	"how-many-items": "Ilang item ang dapat imungkahi by default?",
+	"save-settings": "I-save ang pagsasaayos",
+	"all-users": "Lahat ng mga tagagamit na gumamit ng WMD",
+	"username": "Username",
+	"total-edits": "Kabuuang bilang ng mga edit",
+	"total": "Kabuuan"
+}
