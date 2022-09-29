@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"GinawaSaHapon"
+			"GinawaSaHapon",
+			"Jojit fb"
 		]
 	},
 	"users": "Mga tagagamit",
@@ -15,6 +16,6 @@
 	"save-settings": "I-save ang pagsasaayos",
 	"all-users": "Lahat ng mga tagagamit na gumamit ng WMD",
 	"username": "Username",
-	"total-edits": "Kabuuang bilang ng mga edit",
+	"total-edits": "Kabuuang bilang ng mga binago",
 	"total": "Kabuuan"
 }
