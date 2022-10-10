@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tajamul9"
+		]
+	},
+	"users": "صٲرِفیٖن",
+	"settings": "طَرٕز",
+	"login": "دٲخل گژھن",
+	"logout": "کھاتہٕ منٛز نؠبر نیرُن",
+	"source": "آگُر",
+	"please-login": "مہربٲنی کٕرِتھ، <a href=\"login\">دٲخل گژُھن</a>",
+	"save-settings": "طرٕز محفوٗظ تھاوُن",
+	"all-users": "سأری صٲرِف یِمہٕ WMD چھِ استعمال کران",
+	"username": "صٲرِف ناو",
+	"total-edits": "تَمام اؠڈِٹَن ہُنٛد تعداد",
+	"total": "کُل"
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Finizio"
+		]
+	},
+	"users": "Utente",
+	"settings": "Mpustaziune",
+	"login": "Tràse",
+	"logout": "Iesce",
+	"source": "Origgene",
+	"please-login": "Pe' piacere, <a href=\"login\">tràse</a>",
+	"username": "Nomme utente",
+	"total-edits": "Nummero totale d'e cagnamiente",
+	"total": "Totale"
+}
