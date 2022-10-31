@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
 	"users": "Kevtteeh",
 	"settings": "Asâttâsah",
 	"source": "Käldee",
+	"save-settings": "Vuorkkii asâttâsâid",
 	"username": "Kevtteenommâ",
 	"total-edits": "Nubástitmij ubâlâs meeri"
 }
