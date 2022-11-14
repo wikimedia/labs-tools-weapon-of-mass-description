@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Къарачайлы"
+		]
+	},
+	"users": "Къошулуучула",
+	"settings": "Джарашдырыўла",
+	"login": "Кириу",
+	"logout": "Чыгъыу",
+	"source": "Къайнакъ",
+	"please-login": "<a href=\"Киригиз\"></a>",
+	"description": "<strong>Weapon of Mass Description</strong> (Кёбчюлюк ачыкълау сауут) ачыкъламаланы эмда/неда белгилени Викибилгиледе кёблю толтурургъа мадар берген адырды. Аслам <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Викибилги</a> бетде окъугъуз.",
+	"how-many-items": "Тынгылау бла ненча элемент теджерге керекди?",
+	"save-settings": "Джарашдырыуланы сакъла",
+	"all-users": "WMD хайырланнган бютеу къошулуучула",
+	"username": "Къошулуучуну аты",
+	"total-edits": "Бютеу тюрлендириулени саны",
+	"total": "Бютеулей"
+}
