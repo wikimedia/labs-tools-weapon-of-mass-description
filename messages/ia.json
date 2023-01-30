@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"users": "Usatores",
+	"settings": "Parametros",
+	"login": "Aperir session",
+	"logout": "Clauder session",
+	"source": "Fonte",
+	"please-login": "Per favor <a href=\"login\">aperi session</a>",
+	"description": "<strong>Arma de Description Massive</strong> es un utensile que te permitte plenar descriptiones e/o etiquettas de Wikidata in massa. Lege plus sur <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description/ia\">le pagina Wikidata</a> sur iste utensile.",
+	"how-many-items": "Quante elementos debe esser suggerite per predefinition?",
+	"save-settings": "Salveguardar parametros",
+	"all-users": "Tote le usatores que ha jammais usate ADM",
+	"username": "Nomine de usator",
+	"total-edits": "Numero total de modificationes",
+	"total": "Total"
+}
