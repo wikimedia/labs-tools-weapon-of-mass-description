@@ -1,13 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"users": "Benotzer",
 	"settings": "Astellungen",
+	"login": "Aloggen",
+	"logout": "Ausloggen",
 	"source": "Quell",
+	"please-login": "Wgl. <a href=\"loggt Iech an\">login</a>",
+	"description": "<strong>Weapon of Mass Description</strong> ass een Tool, mat deem Dir Wikidata-Beschreiwungen an/oder Bezeechnungen en masse ausfëlle kënnt. Méi Informatiounen iwwer dësen Tool fannt Dir op <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">dëser Wikidata-Säit</a>.",
+	"how-many-items": "Wéi vill Elementer solle standardméisseg proposéiert ginn?",
 	"save-settings": "Astellunge späicheren",
+	"all-users": "All Benotzer, déi jeemools WMD benotzt hunn",
 	"username": "Benotzernumm",
+	"total-edits": "Gesamtzuel vun den Ännerungen",
 	"total": "Total"
 }
