@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"JonesT143"
+		]
+	},
+	"users": "Defnyddwyr",
+	"settings": "Gosodiadau",
+	"login": "Mewngofnodi",
+	"logout": "Allgofnodi",
+	"source": "Ffynhonnell",
+	"please-login": "<a href=\"login\">Mewngofnodwch</a>, os gwelwch yn dda",
+	"save-settings": "Cadw'r gosodiadau",
+	"username": "Enw defnyddiwr",
+	"total-edits": "Cyfanswm y golygiadau",
+	"total": "Cyfanswm"
+}
