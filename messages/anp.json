@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Proabscorp!"
+		]
+	},
+	"users": "सदस्य",
+	"settings": "सेटिंग्स",
+	"login": "लॉग इन करौ",
+	"logout": "लॉगआउट  करौ",
+	"source": "स्रोत",
+	"please-login": "कृपया <a href=\"login\">लॉग-इन करौ</a>",
+	"description": "<strong>व्यापक विवरण क हथियार</strong> एगो ऐसनौ उपकरण छै जेकरौ मदद सँ तोंय विकिडेटा प सामूहिक रूप सँ विवरण आरो/या लेबल जोड़ै सकै छौ। हैय उपकरण केरौ बारै मँ एकरौ <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">विकिडेटा पृष्ठ</a> प अधिक जानौ।",
+	"how-many-items": "डिफ़ॉल्ट रूप सँ केतना आयटम्स क सुझाव देलौ जाना चाहियौ?",
+	"save-settings": "सेटिंग सहेजौ",
+	"all-users": "WMD क उपयोग करै बला सब्भे सदस्य",
+	"username": "सदस्यनाम",
+	"total-edits": "संपादन के कुल संख्या",
+	"total": "कुल"
+}
