@@ -10,6 +10,12 @@
 	"login": "داخل ٿيو",
 	"logout": "ٻاهر نڪرو",
 	"source": "ذريعو",
+	"please-login": "مھرباني ڪري، <a href=\"login\">داخل ٿيو</a>",
+	"description": "<strong>Weapon of Mass Description</strong> هڪ اوزار آهي جيڪو توهان کي Wikidata en masse تفصيل ۽/يا ليبل ڀرڻ جي اجازت ڏئي ٿو. وڌيڪ ڏسو <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata صفحي</a> تي هن اوزار بابت.",
+	"how-many-items": "پاڻمرادو طور ڪيتريون شين جي صلاح ڏني وڃي؟",
+	"save-settings": "ترتيبون سانڍيو",
+	"all-users": "سڀ واپرائيندڙ جن ڪڏهن WMD استعمال ڪيو ھجي",
 	"username": "واپرائيندڙنانءُ",
+	"total-edits": "ڪل سنوارن جو انگ",
 	"total": "سمورو"
 }
