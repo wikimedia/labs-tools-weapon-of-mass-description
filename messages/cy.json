@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Afalau",
 			"JonesT143"
 		]
 	},
@@ -10,8 +11,11 @@
 	"logout": "Allgofnodi",
 	"source": "Ffynhonnell",
 	"please-login": "<a href=\"login\">Mewngofnodwch</a>, os gwelwch yn dda",
-	"save-settings": "Cadw'r gosodiadau",
+	"description": "Mae <strong>Weapon of Mass Description</strong> yn offeryn sy'n eich caniatáu i ysgrifennu disgrifiadau a/neu labeli i Wicidata mewn nifer mawr iawn. Dysgu mwy amdano ar ei <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">dudalen Wicidata</a>.",
+	"how-many-items": "Faint o eitemau y dylid eu hawgrymu yn ddiofyn?",
+	"save-settings": "Cadw gosodiadau",
+	"all-users": "Pob defnyddiwr sydd erioed wedi defnyddio WMD",
 	"username": "Enw defnyddiwr",
-	"total-edits": "Cyfanswm y golygiadau",
+	"total-edits": "Nifer cyfanswm y golygiadau",
 	"total": "Cyfanswm"
 }
