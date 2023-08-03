@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vac31."
+		]
+	},
+	"users": "Naudotojai",
+	"settings": "Nustatymai",
+	"login": "Prisijungti",
+	"logout": "Atsijungti",
+	"source": "Šaltinis",
+	"please-login": "Prašome <a href=\"login\">prisijungti</a>"
+}
