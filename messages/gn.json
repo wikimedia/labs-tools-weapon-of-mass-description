@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"P. S. F. Freitas"
+		]
+	},
+	"users": "Puruharakuéra",
+	"settings": "Ñemyatyrõ",
+	"login": "Eike",
+	"logout": "Ñesẽ",
+	"source": "Ypy",
+	"please-login": "<a href=\"login\">Eikemi</a> nde kuatiápe",
+	"description": "<strong><i>Weapon of Mass Description</i></strong> es una herramienta que permite completar descripciones y/o etiquetas en Wikidata en masa. Ver más en la <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">página de Wikidata</a> acerca de esta herramienta.",
+	"how-many-items": "Mboy mba'épa ojehechauka va'erã ijehegui?",
+	"save-settings": "Eñongatu umi ñemyatyrõ",
+	"all-users": "Mayma puruhára oipuruva'ekue WMD",
+	"username": "Puruhára réra",
+	"total-edits": "Ñemoambue retakue",
+	"total": "Opaite"
+}
