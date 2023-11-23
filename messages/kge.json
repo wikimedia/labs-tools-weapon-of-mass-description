@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Es Krim 5 Juta Rasa"
+		]
+	},
+	"users": "Pangguna",
+	"settings": "Pangaturan",
+	"login": "Kuruk log",
+	"logout": "Luwah log",
+	"source": "Sumber",
+	"please-login": "Tulung, <a href=\"login\">kuruk log</a>",
+	"how-many-items": "Pira lamonna item sai tisaranko sacara default?",
+	"save-settings": "Simpan pangaturan",
+	"all-users": "Kaunyin pangguna sai kok makai WMD",
+	"username": "Golar pangguna",
+	"total-edits": "Jumlah unyin suntingan",
+	"total": "Total"
+}
