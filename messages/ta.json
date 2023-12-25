@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fahimrazick",
 			"Siddhan"
 		]
 	},
@@ -12,7 +13,7 @@
 	"please-login": "<a href=\"login\">உள்நுழையவும்</a>",
 	"description": "<strong>Weapon of Mass Description</strong> என்பது விக்கிடேட்டாவில் மொத்தமாக விளக்கங்கள் மற்றும்/அல்லது லேபிள்களை நிரப்ப உங்களை அனுமதிக்கும் ஒரு கருவியாகும். இந்த கருவியைப் பற்றி <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">விக்கிடேட்டா பக்க</a>த்தில் மேலும் பார்க்கவும்",
 	"how-many-items": "முன்னிருப்பாக எத்தனை பொருட்களை பரிந்துரைக்க வேண்டும்?",
-	"save-settings": "அமைப்புகளைச் சேமிக்கவும்",
+	"save-settings": "அமைப்புகளைச் சேமி",
 	"all-users": "இதுவரை WMD ஐப் பயன்படுத்திய அனைத்து பயனர்களும்",
 	"username": "பயனர் பெயர்",
 	"total-edits": "தொகுப்புகளின் மொத்த எண்ணிக்கை",
