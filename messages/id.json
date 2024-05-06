@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Akmaie Ajam"
+			"Akmaie Ajam",
+			"Veracious"
 		]
 	},
 	"users": "Pengguna",
@@ -9,7 +10,7 @@
 	"login": "Masuk log",
 	"logout": "Keluar log",
 	"source": "Sumber",
-	"please-login": "Tolong <a href=\"login\">masuk</a>",
+	"please-login": "Mohon untuk <a href=\"login\">masuk log</a>",
 	"description": "<strong>Weapon of Mass Description</strong> adalah sebuah alat yang memungkinkan Anda mengisi deskripsi dan/atau label ke Wikidata secara massal. Lihat selengkapnya di <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata page</a> tentang alat ini.",
 	"how-many-items": "Berapa banyak item yang disarankan secara default?",
 	"save-settings": "Simpan pengaturan",
