@@ -10,6 +10,8 @@
 	"logout": "Аравала(йала)",
 	"source": "Хьост",
 	"please-login": "Дехар до, <a href=\"login\">чугӀо</a>",
+	"description": "<strong>Weapon of Mass Description</strong> (Массо а хаамийн герз) — Викихаамаш чохь хаамаш а,/йа билгалонаш а алсам дӀайазйан аьтто луш болу гӀирс. ХӀокху гӀирсах лаьцна мадарра ду <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Викихамашкахь</a>.",
+	"how-many-items": "Маса элемент кховдо йеза Ӏад йитаран кепаца?",
 	"save-settings": "Ӏалашбе нисдаран гӀирс",
 	"all-users": "Мацца а WMD лелина декъашхой",
 	"username": "Декъашхочун цӀе",
