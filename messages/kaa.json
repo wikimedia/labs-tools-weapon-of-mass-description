@@ -1,11 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajiniyaz Nurniyazov"
+			"Ajiniyaz Nurniyazov",
+			"Inabat Allanova"
 		]
 	},
 	"users": "Paydalanıwshılar",
 	"settings": "Sazlawlar",
-	"login": "Login",
-	"username": "Paydalanıwshı atı"
+	"login": "Kiriw",
+	"logout": "Shıǵıw",
+	"source": "Derek",
+	"please-login": "Ótinish, <a href=\"login\">kiriń</a>",
+	"description": "<strong>Ǵalabalıq súwretlew quralı</strong> - bul súwretlew hám/yamasa belgilerdi Wikidataģa ǵalabalıq toltırıw imkaniyatın beretuģın qural. Bul qurılma haqqında <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata beti</a> arqalı kórip shıǵıń.",
+	"how-many-items": "Standart túrde neshe element usınıs etiliwi kerek?",
+	"save-settings": "Sazlawlardı saqlań",
+	"all-users": "WMD dan paydalanǵan barlıq paydalanıwshılar",
+	"username": "Paydalanıwshı atı",
+	"total-edits": "Jámi redaktorlawlar sanı",
+	"total": "Jámi"
 }
