@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"YoaR"
 		]
 	},
 	"users": "Usuarios",
@@ -11,7 +12,7 @@
 	"source": "Fonte",
 	"please-login": "<a href=\"login\">Anicia</a> sesión",
 	"description": "<strong>Weapon of Mass Description</strong> ye una ferramienta que te permite rellenar en masa descripciones y/o etiquetes de Wikidata. Ver más na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">páxina de Wikidata</a> sobro esta ferramienta.",
-	"how-many-items": "¿Cuántos elementos tienen de suxurise por defeutu?",
+	"how-many-items": "¿Cuántos elementos tienen de suxerise por defeutu?",
 	"save-settings": "Guardar la configuración",
 	"all-users": "Tolos usuarios qu'usaron dacuando WMD",
 	"username": "Nome d'usuariu",
