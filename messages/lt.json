@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Nokeoo",
 			"Vac31."
 		]
 	},
@@ -9,5 +10,12 @@
 	"login": "Prisijungti",
 	"logout": "Atsijungti",
 	"source": "Šaltinis",
-	"please-login": "Prašome <a href=\"login\">prisijungti</a>"
+	"please-login": "Prašome <a href=\"login\">prisijungti</a>",
+	"description": "<strong>Masinio aprašymo ginklas</strong> - įrankis, kuris leidžia masiškai užpildyti aprašymus ir (ar) žymes Vikiduomenyse. Žiūrėkite daugiau <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Vikiduomenų puslapyje</a> apie šį įrankį.",
+	"how-many-items": "Kiek elementų turėtų būti pasiūlyta pagal numatytuosius nustatymus?",
+	"save-settings": "Išsaugoti nustatymus",
+	"all-users": "Visi naudotojai, kurie kada nors naudojo MAG",
+	"username": "Naudotojo vardas",
+	"total-edits": "Viso pakeitimų",
+	"total": "Viso"
 }
