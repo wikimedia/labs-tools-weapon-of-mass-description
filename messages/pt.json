@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"O andras"
 		]
 	},
 	"users": "Utilizadores",
@@ -9,9 +10,9 @@
 	"login": "Entrar",
 	"logout": "Sair",
 	"source": "Fonte",
-	"please-login": "<a href=\"login\">Inicie uma sessão</a>, por favor",
-	"description": "A <strong>Arma de Descrição Maciça</strong> é uma ferramenta que lhe permite preencher descrições e/ou etiquetas Wikidata em massa. Saiba mais na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">página da wiki Wikidata</a> sobre esta ferramenta.",
-	"how-many-items": "Quantos elementos devem ser sugeridos por padrão?",
+	"please-login": "<a href=\"login\">Inicie sessão</a>, por favor",
+	"description": "A <strong>Arma de Descrição Maciça</strong> é uma ferramenta que lhe permite preencher descrições e/ou etiquetas no Wikidata em massa. Saiba mais na <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">página do Wikidata</a> sobre esta ferramenta.",
+	"how-many-items": "Quantos elementos devem ser sugeridos por defeito?",
 	"save-settings": "Gravar configurações",
 	"all-users": "Todos os utilizadores que já usaram a ADM",
 	"username": "Nome de utilizador",
