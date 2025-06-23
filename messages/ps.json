@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
 	"users": "کارنان",
-	"settings": "امستنې",
+	"settings": "اوڼنې",
 	"login": "ننوتل",
 	"logout": "وتل",
 	"source": "سرچينه",
