@@ -1,5 +1,5 @@
 function sendForm() {
-    swal("Sending", "Your labels&desciptions are being sent to Wikidata.org", "success");
+    swal("Sending", "Your labels&descriptions are being sent to Wikidata.org", "success");
 	$('#send').disabled = true;
 	var items = $("input[name^='new_label_']");
 	var payload = [];
@@ -22,7 +22,7 @@ function sendForm() {
 		$('tbody').empty();
 		$('#items').val("");
 	}).done(function() {
-        swal("Saved", "Your labels&desciptions should be now live on Wikidata.org", "success");
+        swal("Saved", "Your labels&descriptions should be now live on Wikidata.org", "success");
     })
 }
 
