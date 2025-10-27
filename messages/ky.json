@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Baydastann",
 			"Bosogo",
 			"Incall"
 		]
@@ -11,7 +12,7 @@
 	"logout": "Чыгуу",
 	"source": "Булак",
 	"please-login": "Сураныч, <a href=\"login\">кириңиз</a>",
-	"description": "<strong>Weapon of Mass Description</strong> — бул курал сизге Виктмаалыматка массалык түрдө сүрөттөмөлөрдү жана/же белгилерди толтурууга мүмкүнчүлүк берет. Бул курал тууралуу көбүрөөк маалыматты анын <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Викимаалымат барагынан</a> таба аласыз.",
+	"description": "<strong>Weapon of Mass Description</strong> — бул курал сизге Викимаалыматка массалык түрдө сүрөттөмөлөрдү жана/же белгилерди толтурууга мүмкүнчүлүк берет. Бул курал тууралуу көбүрөөк маалыматты анын <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Викимаалымат барагынан</a> таба аласыз.",
 	"how-many-items": "Адатта канча нерсе сунушталышы керек?",
 	"save-settings": "Параметрлерди сактоо",
 	"all-users": "WMDди колдонгон бардык колдонуучулар",
