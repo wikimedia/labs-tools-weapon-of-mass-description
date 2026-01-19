@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Papuass",
+			"Rusjanis"
+		]
+	},
+	"users": "Dalībnieki",
+	"settings": "Iestatījumi",
+	"login": "Pieslēgties",
+	"logout": "Iziet",
+	"source": "Avots",
+	"please-login": "Lūdzu, <a href=\"login\">piesakieties</a>",
+	"how-many-items": "Cik vienumu vajadzētu ieteikt pēc noklusējuma?",
+	"save-settings": "Saglabāt iestatījumus",
+	"username": "Lietotājvārds",
+	"total-edits": "Kopējais labojumu skaits",
+	"total": "Kopā"
+}
