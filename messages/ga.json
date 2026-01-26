@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aindriu80"
+		]
+	},
+	"users": "Úsáideoirí",
+	"settings": "Socruithe",
+	"login": "Logáil Isteach",
+	"logout": "Logáil Amach",
+	"source": "Foinse",
+	"please-login": "Le do thoil, <a href=\"login\">logáil isteach</a>",
+	"description": "Is uirlis í <strong>Cur Síos ar Arm Maise</strong> a ligeann duit tuairiscí agus/nó lipéid a líonadh isteach i Wikidata go mais. Féach tuilleadh eolais ar <a href=\"https://www.wikidata.org/wiki/Wikidata:Cur Síos ar Arm Maise\">leathanach Wikidata</a> faoin uirlis seo.",
+	"how-many-items": "Cé mhéad mír ba chóir a mholadh de réir réamhshocraithe?",
+	"save-settings": "Sábháil socruithe",
+	"all-users": "Gach úsáideoir a d'úsáid WMD riamh",
+	"username": "Ainm úsáideora",
+	"total-edits": "Líon iomlán na n-eagarthóireacht",
+	"total": "Iomlán"
+}
