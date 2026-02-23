@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Oujon"
+		]
+	},
+	"users": "Хоснователї",
+	"settings": "Наставлїня",
+	"login": "Приголосити ся",
+	"logout": "Одголосити ся",
+	"source": "Жрідло",
+	"please-login": "Прошу, <a href=\"login\">Приголосити ся </a>",
+	"username": "Мено хоснователя",
+	"total": "Цілком"
+}
