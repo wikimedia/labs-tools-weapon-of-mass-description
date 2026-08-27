@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"JiodoJ"
+		]
+	},
+	"users": "Utenti",
+	"settings": "Għażliet",
+	"login": "Idħol f'Kontok",
+	"logout": "Oħroġ minn Kontok",
+	"source": "Sors",
+	"please-login": "Jekk jogħġbok, <a href=\"login\">idħol f'kontok</a>",
+	"description": "<strong>Armata ta' Deskrizzjoni Massa</strong> hija għodda li tħallik timla deskrizzjonijiet u/jew tikketti għal Wikidata b'massa. Ara aktar fuq il-paġna ta' Wikidata dwar dil-għodda.",
+	"how-many-items": "Kemm il-oġġett għandu jiġi propost normalment?",
+	"save-settings": "Salva l-għażliet",
+	"all-users": "L-utenti kollha li użaw l-ADM",
+	"username": "Isem l-utent",
+	"total-edits": "Numru totali ta' modifiki",
+	"total": "Totali"
+}

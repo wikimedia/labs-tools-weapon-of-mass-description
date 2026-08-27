@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dr Lotus Black"
+			"Dr Lotus Black",
+			"Kalixlouiis"
 		]
 	},
 	"users": "အသုံးပြုသူများ",
@@ -10,7 +11,10 @@
 	"logout": "အကောင့်မှပြန်ထွက်ခြင်း",
 	"source": "ရင်းမြစ်",
 	"please-login": "ကျေးဇူးပြု၍ <a href=\"login\">အကောင့်ထဲသို့ဝင်ပါ</a>",
+	"description": "<strong>Weapon of Mass Description</strong> သည် ဝီကီဒေတာ သို့ ရှင်းလင်းချက်များ သို့မဟုတ် အညွှန်းများကို တစ်ပြိုင်နက် အစုလိုက် ထည့်သွင်းပေးနိုင်သော ကိရိယာတစ်ခု ဖြစ်ပါသည်။ ဤကိရိယာနှင့် ပတ်သက်သည့် အသေးစိတ်ကို <a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata စာမျက်နှာ</a> တွင် ကြည့်ရှုနိုင်ပါသည်။",
+	"how-many-items": "ပုံသေအားဖြင့် မည်သည့်အရေအတွက်ကို အကြံပြုဖော်ပြပေးရမည်နည်း။",
 	"save-settings": "အပြင်အဆင်များ သိမ်းရန်",
+	"all-users": "WMD ကို အသုံးပြုခဲ့ဖူးသော အသုံးပြုသူ အားလုံး",
 	"username": "အသုံးပြုသူအမည်",
 	"total-edits": "စုစုပေါင်း တည်းဖြတ်မှု အရေအတွက်",
 	"total": "စုစုပေါင်း"
