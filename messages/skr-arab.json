@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saraiki"
+			"Saraiki",
+			"Tauqeerkhansurani"
 		]
 	},
 	"users": "ورتݨ آلے",
@@ -10,6 +11,7 @@
 	"logout": "لاگ آؤٹ",
 	"source": "ماخذ",
 	"please-login": "سوہݨا، <a href=\"لاگ ان تھیوو\">login</a>",
+	"description": "Weapon of Mass Description ہک اینجھا ٹول اے جیندے نال تساں وکی ڈیٹا (Wikidata) اتے وڈے پیمانے اتے ڈسکرپشنز (descriptions) تے لیبلز (labels) بھر سڳدے ہاؤ۔ اینہہ ٹول دے بارے وچ مزید جاݨݨ کیتے وکی ڈیٹا دا ایہ صفحہ دیکھو۔\n<a href=\"https://www.wikidata.org/wiki/Wikidata:Weapon_of_Mass_Description\">Wikidata page</a>",
 	"how-many-items": "ڈیفالٹ وچ چوکھے آئٹم تجویز تھئے ہووݨے چاہیدن؟",
 	"save-settings": "ترتیباں محفوظ کرو",
 	"all-users": "سارے ورتݨ آلے جنہاں کݙان٘ہ وی ڈبلیو ایم ڈی ورتے",
